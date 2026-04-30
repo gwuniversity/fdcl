@@ -101,7 +101,7 @@ about:
     The Flight Dynamics and Control Laboratory (FDCL), which he directs, focuses on geometric approaches to dynamics, control, and learning for aerospace systems and robotics. FDCL emphasizes fundamental and innovative ideas, rigorous mathematical analysis, and clear, elegant presentation. Above all, we value curiosity and take pride in the research process.
 
     Welcome to our lab!
-  about_image: /images/Lee.png
+  about_image: images/Lee.png
   about_image_alt: Taeyoung Lee
   about_button_text: Meet our team
   about_button_link: "/members/"
