@@ -1,10 +1,11 @@
 #-------------------------------
 # General Site Settings
 # baseurl: /~tylee # the subpath of your site, e.g. /blog; choose this option before deployment
-baseurl: # choose this option for local debudding
-url: http://fdcl.seas.gwu.edu # the base hostname & protocol for your site, e.g. http://example.com
-website: http://fdcl.seas.gwu.edu
-
+#baseurl: # choose this option for local debudding
+#url: http://fdcl.seas.gwu.edu # the base hostname & protocol for your site, e.g. http://example.com
+#$website: http://fdcl.seas.gwu.edu
+url: https://gwuniversity.github.io
+baseurl: /fdcl
 
 
 #-------------------------------
