@@ -1,0 +1,144 @@
+#-------------------------------
+# Site Settings
+title: Flight Dynamics and Control Lab | Taeyoung Lee
+description: Taeyoung Lee, geometric mechanics, geometric control, quadrotor, George Washington University
+logo: /favicon.ico # You can add own logo. For example "/images/logo.png".
+logo_dark: /favicon_dark.ico
+color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+
+
+#-------------------------------
+# Navigation Settings
+menu_settings:
+  menu_items:
+    - title: "Home"
+      url: "/"
+    - title: "Research"
+      url: "/research/"
+    - title: "Experiment"
+      url: "/experiment/"
+    - title: "Publication"
+      url: "/publication/"
+      # submenu:
+      # - title: "By type"
+      #   url: "/publication_t/"
+      # - title: "By subject"
+      #   url: "/publication_s/"
+      # - title: "By year"
+      #   url: "/publication_y/"
+    - title: "Team"
+      url: "/members/"
+    - title: "Open Position"
+      url: "/open_position/"
+
+# Call to action button
+cta_button:
+  enable: false
+  cta_button_link: '/contact/'
+  cta_button_text: Get in touch
+
+search:
+  enable: false
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero_title: Flight Dynamics and Control Laboratory
+  hero_description: We are a research group focused on the geometry of dynamics, controls, and artificial intelligence for aerospace systems.
+
+hero_authors:
+  enable: false
+  hero_authors_description: Meet our talented team
+
+#-------------------------------
+# News Section Settings
+news:
+  enable: true
+  news_title: News
+  news_tag: "News"
+
+#-------------------------------
+# Recommended Section Settings
+recommended:
+  enable: true
+  recommended_title: Recommended
+  recommended_tag: "Research"
+
+
+# Experiment: Add your youtube video id and caption to display in the experiment section.
+experiment:
+- {youtube_id: "dfWmVE0wvoE", caption: "Vision-in-the-loop validation"}
+- {youtube_id: "TGBQTuKpbAw", caption: "Equivariant reinforcement learning"}
+- {youtube_id: "-NQ6oRsdWgI", caption: "Modular reinforcement learning"}
+- {youtube_id: "_WXyo45Oo1Y", caption: "Autonomous landing on ship"}
+- {youtube_id: "iOOaV7SKJ1g", caption: "Autonomous payload transportation"}
+- {youtube_id: "a-DG2PcUu7k", caption: "Quadrotor backflip in wind"}
+- {youtube_id: "wtn9L6BsYiE", caption: "Quadrotor backflip"}
+- {youtube_id: "ouSsrDfi8DM", caption: "Quadrotor hovering in wind"}
+- {youtube_id: "9e71BL-I07E", caption: "Delayed RTK GPS"}
+- {youtube_id: "Tx_WsYDYz7g", caption: "Laser-guided landing"}
+- {youtube_id: "I_1rXV2XRqk", caption: "Autonomous aerial exploration"}
+- {youtube_id: "CRQfhhICSj0", caption: "Autonomous ground exploration"}
+- {youtube_id: "RyTmWVbgt34", caption: "Autonomous aerial transportation"}
+- {youtube_id: "dsmAbwQram4", caption: "Constrained attitude control"}
+
+member_type:
+- {role: "postdoc", name: "Postdoc"}
+- {role: "graduate", name: "Graduate Students"}
+- {role: "undergraduate", name: "Undergraduate Student"}
+- {role: "alumni", name: "Alumni"}
+
+#-------------------------------
+# About Section Settings
+about:
+  enable: true
+  about_title: Hello, I’m Taeyoung
+  about_subtitle: We are interested in all aspects of flight, both in air and space.
+  about_description: |
+    Dr. Taeyoung Lee is a Professor of Mechanical and Aerospace Engineering at The George Washington University, with research interests at the intersection of engineering and applied mathematics. He received his Ph.D. in Aerospace Engineering and an M.S. in Mathematics from the University of Michigan in 2008.
+
+    The Flight Dynamics and Control Laboratory (FDCL), which he directs, focuses on geometric approaches to dynamics, control, and learning for aerospace systems and robotics. FDCL emphasizes fundamental and innovative ideas, rigorous mathematical analysis, and clear, elegant presentation. Above all, we value curiosity and take pride in the research process.
+
+    Welcome to our lab!
+  about_image: /images/Lee.png
+  about_image_alt: Taeyoung Lee
+  about_button_text: Meet our team
+  about_button_link: "/members/"
+
+#-------------------------------
+# Footer Settings
+footer_description: Taeyoung Lee<br>Mechanical and Aerospae Engineering<br> George Washington University<br> 800 22nd ST NW, Suite 3000, Washington, DC 20052<br> 202-994-6080<br> tylee@gwu.edu
+
+
+# Social Links
+social:
+- {icon: "fa-brands fa-google-scholar", name: "Google Scholar", link: "https://scholar.google.com/citations?user=sBBzntUAAAAJ&hl=en"}
+- {icon: "fa-brands fa-github", name: "Github", link: "https://github.com/fdcl-gwu/"}
+- {icon: "fa-brands fa-youtube", name: "YouTube", link: "https://www.youtube.com/channel/UCREzO49zrgcepGkLW4Qgn2Q"}
+- {icon: "fa-brands fa-facebook-f", name: "Facebook", link: "https://www.facebook.com/fdcl.gwu/"}
+
+# Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
+# Other icons can be found at https://fontawesome.com/icons
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  form_id: tylee@gwu.edu # Add your form_id
+  title: Contact Us
+  description: If you have any questions, please feel free to contact us.
+  button_text: Send now
+
+# NOTE
+# Nomod theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus_identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+
+#-------------------------------
+# Google Analytics
+google_analytics: G-XH946MY2W6

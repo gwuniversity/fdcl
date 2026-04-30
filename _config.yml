@@ -1,0 +1,75 @@
+#-------------------------------
+# General Site Settings
+# baseurl: /~tylee # the subpath of your site, e.g. /blog; choose this option before deployment
+baseurl: # choose this option for local debudding
+url: http://fdcl.seas.gwu.edu # the base hostname & protocol for your site, e.g. http://example.com
+website: http://fdcl.seas.gwu.edu
+
+
+
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/page/:num"
+
+
+#-------------------------------
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  news:
+    output: true
+    permalink: /news/:slug
+  posts:
+    output: true
+    permalink: /:slug
+  authors:
+    output: true
+    permalink: /:name
+  members:
+    output: true
+    permalink: /members/:name
+
+# Pages Path
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "member"
+
+
+sass:
+  style: compressed
