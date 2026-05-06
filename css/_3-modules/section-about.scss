@@ -22,6 +22,29 @@
       object-fit: cover;
     }
   }
+  .aboutSwiper {
+      height: 100%;
+    width: 100%;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 22px;
+      object-fit: cover;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #fff;
+    }
+  }
 
   .about__content {
     max-width: 600px;
@@ -99,6 +122,9 @@
         border-radius: 16px;
       }
     }
+    .aboutSwiper video {
+      border-radius: 16px;
+    }
 
     .about__content {
       .about__title {
@@ -123,5 +149,6 @@
         font-size: 32px;
       }
     }
+    
   }
 }

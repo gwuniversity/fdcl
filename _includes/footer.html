@@ -122,3 +122,58 @@
   </div>
 </footer>
 <!-- end footer -->
+
+<!-- script for videos in the front page -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const swiperEl = document.querySelector(".aboutSwiper");
+  if (!swiperEl) return;
+
+  const swiper = new Swiper(".aboutSwiper", {
+    loop: true,
+    autoplay: false,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+
+    speed: 800,
+
+    on: {
+      init: function () {
+        playActiveVideo(this);
+      },
+      slideChangeTransitionEnd: function () {
+        playActiveVideo(this);
+      }
+    }
+  });
+
+  function playActiveVideo(swiper) {
+    swiperEl.querySelectorAll("video").forEach(function (video) {
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    const video = activeSlide.querySelector("video");
+
+    if (video) {
+      video.play().catch(() => {});
+
+      video.onended = function () {
+        swiper.slideNext();
+      };
+    }
+  }
+});
+</script>
+

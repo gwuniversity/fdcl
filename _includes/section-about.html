@@ -12,6 +12,42 @@
           </div>
           {% endif %}
 
+          {% if site.data.settings.about.about_videos %}
+          <div class="about__image">
+
+            <div class="swiper aboutSwiper">
+              <div class="swiper-wrapper">
+
+                {% for item in site.data.settings.about.about_videos %}
+                <div class="swiper-slide">
+                  <video
+                    muted
+                    autoplay
+                    playsinline
+                    preload="metadata"
+                    {% if item.poster %}
+                    poster="{{ item.poster | relative_url }}"
+                    {% endif %}
+                  >
+                    <source src="{{ item.video | relative_url }}" type="video/mp4">
+                  </video>
+                </div>
+                {% endfor %}
+
+              </div>
+
+              <!-- arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+
+              <!-- dots -->
+              <div class="swiper-pagination"></div>
+
+            </div>
+
+          </div>
+          {% endif %}
+
           <div class="about__content">
             {% if site.data.settings.about.about_title %}
             <h2 class="about__title">{{ site.data.settings.about.about_title }}</h2>
