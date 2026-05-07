@@ -2,7 +2,7 @@
 layout: page
 title: Elements
 permalink: /elements/
-image: '/images/18.jpg'
+image: '/favicon.ico'
 image_caption: The future of virtual reality
 ---
 
