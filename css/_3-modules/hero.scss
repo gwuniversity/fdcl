@@ -122,30 +122,10 @@
     line-height: 1.38;
   }
 
-  .hero__search {
-    position: relative;
-    max-width: 500px;
-    padding: 16px 24px;
-    margin: 32px auto 0;
+  .hero__affiliation {
+    margin: 0 0 24px;
     font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    border-radius: 60px;
     color: var(--text-alt-color);
-    background: var(--background-alt-color);
-    transition: $global-transition;
-    cursor: pointer;
-
-    &:hover {
-      background: var(--background-alt-color-2);
-    }
-
-    .hero__search__icon {
-      position: absolute;
-      top: 50%;
-      right: 24px;
-      transform: translateY(-50%);
-    }
   }
 
   @media (max-width: $desktop) {
@@ -165,9 +145,6 @@
       font-size: 38px;
     }
 
-    .hero__search {
-      margin: 20px auto 0;
-    }
   }
 
   @media (max-width: $mobile) {

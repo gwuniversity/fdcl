@@ -44,10 +44,10 @@
           </div>
 
           <div class="nav-button">
-            <div class="search-button">
+            <button type="button" class="search-button" aria-label="Search the site">
               <i class="search-button__icon fa-solid fa-magnifying-glass"></i>
-              <span class="search-button__text">Search</span>
-            </div>
+              <span class="search-button__text">Search the site</span>
+            </button>
             {% if site.data.settings.cta_button.enable == true %}
             <a href="{% if site.data.settings.cta_button.cta_button_link %}{{ site.data.settings.cta_button.cta_button_link }}{% else %}#{% endif %}" class="button cta-button">{{ site.data.settings.cta_button.cta_button_text }}</a>
             {% endif %}

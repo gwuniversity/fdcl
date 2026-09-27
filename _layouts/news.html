@@ -10,7 +10,11 @@ layout: default
         {% if page.tags.size >= 1 %}
         <div class="post__tags">
         {% for tag in page.tags %}
+          {% if tag == 'News' %}
+          <a href="{{ '/news/' | relative_url }}" class="post__tag">{{ tag }}</a>
+          {% else %}
           <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post__tag">{{ tag }}</a>
+          {% endif %}
         {% endfor %}
         </div>
         {% endif %}
@@ -65,8 +69,11 @@ layout: default
     {% else %}
 
     {% if page.image %}
-    <div class="post__image">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    <div class="post__image{% if page.image_secondary %} post__image--pair{% endif %}{% if page.image_fit == 'contain' %} post__image--contain{% endif %}">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+      {% if page.image_secondary %}
+      <img src="{{ page.image_secondary | relative_url }}" alt="{{ page.image_secondary_alt | escape }}">
+      {% endif %}
     </div>
     {% endif %}
     {% endif %}

@@ -56,7 +56,14 @@ layout: default
 
     </div>
 
-    {% if page.video_embed %}
+    {% if page.video %}
+    <div class="post__video">
+      <video class="post__local-video" controls playsinline preload="metadata" poster="{{ page.image | relative_url }}" aria-label="{{ page.video_label | default: page.title | escape }}">
+        <source src="{{ page.video | relative_url }}" type="video/mp4">
+        <a href="{{ page.video | relative_url }}">Watch the research video</a>
+      </video>
+    </div>
+    {% elsif page.video_embed %}
     <div class="post__video">
       <div class="post__video__wrap">
         <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -65,8 +72,8 @@ layout: default
     {% else %}
 
     {% if page.image %}
-    <div class="post__image">
-      <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    <div class="post__image{% if page.image_fit == 'contain' %} post__image--contain{% endif %}"{% if page.image_max_width %} style="max-width: {{ page.image_max_width | plus: 0 }}px; margin-inline: auto;"{% endif %}>
+      <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
     </div>
     {% endif %}
     {% endif %}

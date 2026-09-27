@@ -1,0 +1,99 @@
+/* Horizontally scrollable homepage news; the archive keeps its grid. */
+.article__image--contain img { object-fit: contain; }
+
+.post__image.post__image--contain {
+  aspect-ratio: auto;
+
+  img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.article__image--pair,
+.post__image.post__image--pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+
+  img {
+    position: static;
+    width: calc((100% - 16px) / 2);
+    height: auto;
+    max-width: 200px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+}
+
+.post__image.post__image--pair {
+  aspect-ratio: auto;
+  padding: 32px 16px;
+}
+
+.news__actions,
+.news__controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.news__actions {
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.news__controls {
+  gap: 8px;
+
+  &[hidden] { display: none; }
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--heading-font-color);
+    background: var(--background-color);
+    cursor: pointer;
+
+    &:hover:not(:disabled) { background: var(--background-alt-color); }
+    &:disabled { opacity: .3; cursor: default; }
+    &:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  }
+}
+
+.news__track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 96px) / 4);
+  gap: 32px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  padding: 4px 0 16px;
+
+  &:focus-visible { outline: 2px solid var(--heading-font-color); outline-offset: 4px; }
+
+  .news__item { min-width: 0; scroll-snap-align: start; }
+  .article { margin-bottom: 0; }
+
+  @media (max-width: $desktop) {
+    grid-auto-columns: calc((100% - 32px) / 2);
+  }
+
+  @media (max-width: $tablet) {
+    grid-auto-columns: 86%;
+    gap: 20px;
+  }
+}

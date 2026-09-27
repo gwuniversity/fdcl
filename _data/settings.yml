@@ -45,7 +45,8 @@ search:
 hero:
   enable: true
   hero_title: Flight Dynamics and Control Laboratory
-  hero_description: We are a research group focused on the geometry of dynamics, controls, and artificial intelligence for aerospace systems.
+  hero_affiliation: The George Washington University
+  hero_description: We integrate differential geometry, control, estimation, optimization, and artificial intelligence to advance autonomous aerospace and robotic systems—from mathematical foundations to UAV flight experiments.
 
 hero_authors:
   enable: false
@@ -62,7 +63,7 @@ news:
 # Recommended Section Settings
 recommended:
   enable: true
-  recommended_title: Recommended
+  recommended_title: Featured Research
   recommended_tag: "Research"
 
 
@@ -94,11 +95,13 @@ member_type:
 about:
   enable: true
   about_title: About FDCL
-  about_subtitle: We are interested in all aspects of flight, both in air and space.
+  about_subtitle: From geometric foundations to autonomous flight.
   about_description: |
-    Dr. Taeyoung Lee is a Professor of Mechanical and Aerospace Engineering at The George Washington University, with research interests at the intersection of engineering and applied mathematics. He received his Ph.D. in Aerospace Engineering and an M.S. in Mathematics from the University of Michigan in 2008.
+    At FDCL, we study how geometry can help autonomous systems move, perceive, and make decisions. Our research brings together differential geometry and applied mathematics with control, estimation, optimization, and artificial intelligence.
 
-    The Flight Dynamics and Control Laboratory (FDCL), which he directs, focuses on geometric approaches to dynamics, control, and learning for aerospace systems and robotics. FDCL emphasizes fundamental and innovative ideas, rigorous mathematical analysis, and clear, elegant presentation. Above all, we value curiosity and take pride in the research process.
+    We connect mathematical theory, computational methods, and experimental validation. Our applications range from spacecraft dynamics and bioinspired flight to cooperative aerial robotics and autonomous maritime landing, with UAV experiments providing a direct link between our methods and physical systems.
+
+    Led by Dr. Taeyoung Lee, Professor of Mechanical and Aerospace Engineering at The George Washington University, we value curiosity, rigorous analysis, and clear communication.
 
   # about_image: images/Lee.png
   # about_image_alt: Taeyoung Lee
@@ -107,11 +110,26 @@ about:
   about_videos:
 
     - video: /videos/inv_pend.mp4
+      poster: /images/video-posters/inv_pend.jpg
+      caption: Quadrotor balancing a flying inverted pendulum
     - video: /videos/flip.mp4
+      poster: /images/video-posters/flip.jpg
+      caption: Quadrotor flip maneuver
     - video: /videos/ship_landing.mov
+      poster: /images/video-posters/ship_landing.jpg
+      caption: Autonomous launch and recovery in ocean environment
     - video: /videos/monarch.mp4
+      poster: /images/video-posters/monarch.jpg
+      caption: Bioinspired flapping-wing flight control
     - video: /videos/kw41999.mp4
+      poster: /images/video-posters/kw41999.jpg
+      caption: Binary asteroid dynamics simulation
     - video: /videos/vision_in_loop.mp4
+      poster: /images/video-posters/vision_in_loop.jpg
+      caption: Vision-in-the-loop validation for maritime landing
+    - video: /videos/revise-mapping.mp4
+      poster: /images/video-posters/revise-mapping.jpg
+      caption: Online, open-vocabulary 3D SLAM
 
 #-------------------------------
 # Footer Settings

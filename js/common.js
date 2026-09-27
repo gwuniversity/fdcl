@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     body = document.querySelector('body'),
     menuToggle = document.querySelector(".hamburger"),
     menuList = document.querySelector(".main-nav"),
-    searchOpenButton = document.querySelectorAll(".search-button, .hero__search"),
+    searchOpenButton = document.querySelectorAll(".search-button"),
     searchCloseIcon = document.querySelector(".search__close"),
     searchOverlay = document.querySelector(".search__overlay"),
     searchInput = document.querySelector(".search__text"),

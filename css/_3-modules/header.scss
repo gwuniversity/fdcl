@@ -296,6 +296,10 @@
   margin-left: auto;
 
   .search-button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
     display: flex;
     align-items: center;
     color: var(--link-color);

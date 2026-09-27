@@ -2,17 +2,17 @@
   <div class="article__inner">
 
     <div class="article__head">
-      {% if post.image and post.video_embed %}
+      {% if post.image %}{% if post.video_embed or post.video %}
       <div class="video-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <polygon points="40,30 70,50 40,70"></polygon>
         </svg>
       </div>
-      {% endif %}
+      {% endif %}{% endif %}
 
       {% if post.image %}
-      <a href="{{ post.url | relative_url }}" class="article__image" aria-hidden="true" tabindex="-1">
-        <img class="lazy" data-src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+      <a href="{{ post.url | relative_url }}" class="article__image{% if post.image_fit == 'contain' %} article__image--contain{% endif %}" aria-hidden="true" tabindex="-1">
+        <img class="lazy" data-src="{{ post.thumbnail | default: post.image | relative_url }}" alt="{{ post.thumbnail_alt | default: post.image_alt | default: post.title | escape }}">
       </a>
       {% endif %}
     </div>

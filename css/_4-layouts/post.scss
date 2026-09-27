@@ -230,6 +230,12 @@
   transform: translate(0);
   background-color: var(--background-alt-color);
 
+  .post__local-video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   .post__video__wrap,
   .page__video__wrap {
     position: relative;

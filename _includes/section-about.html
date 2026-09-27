@@ -13,38 +13,30 @@
           {% endif %}
 
           {% if site.data.settings.about.about_videos %}
-          <div class="about__image">
-
-            <div class="swiper aboutSwiper">
+          <div class="about__image about__videos" role="region" aria-label="Research videos" aria-roledescription="carousel">
+            <div class="swiper aboutSwiper" id="research-videos">
               <div class="swiper-wrapper">
-
                 {% for item in site.data.settings.about.about_videos %}
-                <div class="swiper-slide">
-                  <video
-                    muted
-                    autoplay
-                    playsinline
-                    preload="metadata"
-                    {% if item.poster %}
+                <div class="swiper-slide" data-caption="{{ item.caption | escape }}">
+                  <video muted playsinline preload="metadata" controls
                     poster="{{ item.poster | relative_url }}"
-                    {% endif %}
-                  >
-                    <source src="{{ item.video | relative_url }}" type="video/mp4">
+                    aria-label="{{ item.caption | escape }}">
+                    <source src="{{ item.video | relative_url }}">
+                    <a href="{{ item.video | relative_url }}">Watch {{ item.caption }}</a>
                   </video>
                 </div>
                 {% endfor %}
-
               </div>
-
-              <!-- arrows -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-
-              <!-- dots -->
-              <div class="swiper-pagination"></div>
-
+              <div class="about__video-controls" hidden>
+                <button type="button" class="about__video-prev" aria-label="Previous video" aria-controls="research-videos">&#8592;</button>
+                <button type="button" class="about__video-toggle" aria-controls="research-videos">Play video</button>
+                <button type="button" class="about__video-next" aria-label="Next video" aria-controls="research-videos">&#8594;</button>
+              </div>
             </div>
-
+            <div class="about__video-details">
+              <p class="about__video-caption">{{ site.data.settings.about.about_videos.first.caption }}</p>
+              <div class="swiper-pagination about__video-pagination" hidden></div>
+            </div>
           </div>
           {% endif %}
 
@@ -60,9 +52,13 @@
               {{ site.data.settings.about.about_description | markdownify }}
             </div>
             {% endif %}
-            {% if site.data.settings.about.about_button_text %}
-            <a href="{{ site.data.settings.about.about_button_link | relative_url }}" class="about__button button button--big">{{ site.data.settings.about.about_button_text }}</a>
-            {% endif %}
+            <div class="about__actions">
+              <a href="{{ '/research/' | relative_url }}" class="button button--big">Explore Research</a>
+              <a href="{{ '/open_position/' | relative_url }}" class="button button--big about__action-secondary">Join the Lab</a>
+              {% if site.data.settings.about.about_button_text %}
+              <a href="{{ site.data.settings.about.about_button_link | relative_url }}" class="about__button button button--big about__action-secondary">{{ site.data.settings.about.about_button_text }}</a>
+              {% endif %}
+            </div>
           </div>
 
         </div>

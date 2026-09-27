@@ -1,29 +1,49 @@
 {% if site.data.settings.news.enable == true %}
 {% if site.news and site.news.size > 0 %}
 {% assign news_ordered = site.news | sort: 'date' | reverse %}
-<!-- begin section-recommended -->
-<section class="section section-recommended animate">
+<!-- begin section-news -->
+<section class="section section-recommended section-news animate">
   <div class="container">
 
     <div class="section__inner">
       <div class="section__info">
         <div class="section__head">
+          {% if include.show_all %}
+          <h1 class="section__title">{{ site.data.settings.news.news_title }}</h1>
+          {% else %}
           <h2 class="section__title">
             {% if news_ordered.size <= 4 %}
             {{ site.data.settings.news.news_title }}
             {% else %}
-            <a href="{{ '/tags#' | append: news_tag | relative_url }}">{{ site.data.settings.news.news_title }}</a>
+            <a href="{{ '/news/' | relative_url }}">{{ site.data.settings.news.news_title }}</a>
             {% endif %}
           </h2>
-          {% if news_ordered.size > 4 %}
-          <a class="section__link" href="{{ '/tags#' | append: news_tag | relative_url }}">See all</a>
+          <div class="news__actions">
+            <div class="news__controls" hidden>
+              <button class="news__previous" type="button" aria-label="Previous news items" aria-controls="homepage-news" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>
+              </button>
+              <button class="news__next" type="button" aria-label="Next news items" aria-controls="homepage-news">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>
+              </button>
+            </div>
+            <a class="section__link" href="{{ '/news/' | relative_url }}">See all</a>
+          </div>
           {% endif %}
         </div>
       </div>
 
+      {% if include.show_all %}
       <div class="row">
-        {% for news in news_ordered limit: 4 %}
+      {% else %}
+      <div class="news__track" id="homepage-news" role="region" aria-label="News items, scroll horizontally for more" tabindex="0">
+      {% endif %}
+        {% for news in news_ordered %}
+        {% if include.show_all %}
         <div class="col col-3 col-d-6 col-t-12">
+        {% else %}
+        <div class="news__item">
+        {% endif %}
           <div class="article">
             <div class="article__inner">
 
@@ -37,8 +57,11 @@
                 {% endif %}
 
                 {% if news.image %}
-                <a href="{{ news.url | relative_url }}" class="article__image" aria-hidden="true" tabindex="-1">
-                  <img src="{{ news.image | relative_url }}" alt="{{ news.title }}">
+                <a href="{{ news.url | relative_url }}" class="article__image{% if news.image_secondary %} article__image--pair{% endif %}{% if news.image_fit == 'contain' %} article__image--contain{% endif %}" aria-hidden="true" tabindex="-1">
+                  <img src="{{ news.thumbnail | default: news.image | relative_url }}" alt="{{ news.thumbnail_alt | default: news.image_alt | default: news.title | escape }}" loading="lazy">
+                  {% if news.image_secondary %}
+                  <img src="{{ news.image_secondary | relative_url }}" alt="{{ news.image_secondary_alt | escape }}" loading="lazy">
+                  {% endif %}
                 </a>
                 {% endif %}
               </div>
