@@ -11,7 +11,7 @@
           {% if include.show_all %}
           <h1 class="section__title">{{ site.data.settings.news.news_title }}</h1>
           {% else %}
-          <h2 class="section__title">
+          <h2 class="section__title" id="homepage-news">
             {% if news_ordered.size <= 4 %}
             {{ site.data.settings.news.news_title }}
             {% else %}
@@ -20,10 +20,10 @@
           </h2>
           <div class="news__actions">
             <div class="news__controls" hidden>
-              <button class="news__previous" type="button" aria-label="Previous news items" aria-controls="homepage-news" disabled>
+              <button class="news__previous" type="button" aria-label="Previous news items" aria-controls="news-track" disabled>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>
               </button>
-              <button class="news__next" type="button" aria-label="Next news items" aria-controls="homepage-news">
+              <button class="news__next" type="button" aria-label="Next news items" aria-controls="news-track">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>
               </button>
             </div>
@@ -36,7 +36,7 @@
       {% if include.show_all %}
       <div class="row">
       {% else %}
-      <div class="news__track" id="homepage-news" role="region" aria-label="News items, scroll horizontally for more" tabindex="0">
+      <div class="news__track" id="news-track" role="region" aria-label="News items, scroll horizontally for more" tabindex="0">
       {% endif %}
         {% for news in news_ordered %}
         {% if include.show_all %}
