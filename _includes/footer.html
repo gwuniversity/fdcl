@@ -125,11 +125,11 @@
 
 {% if page.url == '/' and site.data.settings.about.about_videos %}
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="{{ '/js/about-videos.js' | relative_url }}"></script>
+<script src="{{ '/js/about-videos.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 {% endif %}
 {% if page.url == '/' and site.data.settings.news.enable == true %}
-<script src="{{ '/js/news-scroll.js' | relative_url }}"></script>
+<script src="{{ '/js/news-scroll.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 {% endif %}
 {% if page.url == '/' or page.url == '/research/' %}
-<script src="{{ '/js/research-scroll.js' | relative_url }}"></script>
+<script src="{{ '/js/research-scroll.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 {% endif %}
