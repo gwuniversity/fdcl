@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput: document.getElementById("js-search-input"),
     resultsContainer: document.getElementById("js-results-container"),
     json: "/search.json",
-    searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__image" style="background-image: url({image})"></a> <a href="{url}" class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}</div><div class="search-results-description">{content}</div></a></div>',
+    searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__image" style="background-image: url({image})" aria-hidden="true" tabindex="-1"></a> <a href="{url}" class="search-results__link"><span class="search-results-date">{metadata}</span><div class="search-results-title">{title}</div><div class="search-results-description">{content}</div></a></div>',
     noResultsText: '<div class="no-results">No results found...</div>'
   });
 
@@ -127,6 +127,59 @@ document.addEventListener("DOMContentLoaded", function() {
   // Responsive Videos
   ======================= */
   reframe(".post__content iframe:not(.reframe-off), .page__content iframe:not(.reframe-off)");
+
+  // Load experiment players only when requested, keeping the gallery lightweight.
+  document.querySelectorAll('.experiment-video__play').forEach(button => {
+    button.addEventListener('click', () => {
+      const player = document.createElement('iframe');
+      player.className = 'reframe-off';
+      player.src = 'https://www.youtube.com/embed/' + encodeURIComponent(button.dataset.youtubeId) + '?autoplay=1';
+      player.title = button.dataset.videoTitle;
+      player.allow = 'autoplay; fullscreen; picture-in-picture';
+      player.allowFullscreen = true;
+      button.replaceWith(player);
+      player.focus();
+    });
+  });
+
+  // Filter bibliography entries without changing their citation numbers.
+  const publicationSearch = document.querySelector('#publication-search');
+  if (publicationSearch) {
+    const normalize = text => text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const entries = Array.from(document.querySelectorAll('.publication-entry'));
+    const sections = Array.from(document.querySelectorAll('.publication-section'));
+    const results = document.querySelector('#publication-search-results');
+    const clear = document.querySelector('#publication-search-clear');
+    function filterPublications() {
+      const terms = normalize(publicationSearch.value).trim().split(/\s+/).filter(Boolean);
+      let visible = 0;
+      entries.forEach(entry => {
+        const matches = terms.every(term => normalize(entry.textContent).includes(term));
+        entry.hidden = !matches;
+        if (matches) visible++;
+      });
+      sections.forEach(section => {
+        section.hidden = !Array.from(section.querySelectorAll('.publication-entry')).some(entry => !entry.hidden);
+      });
+      results.textContent = terms.length
+        ? (visible ? `${visible} of ${entries.length} entries match. Citation numbers are retained.` : 'No matching publications. Try a different term or clear the search.')
+        : `${entries.length} entries. Newest first within each section.`;
+    }
+    publicationSearch.addEventListener('input', filterPublications);
+    clear.addEventListener('click', () => {
+      publicationSearch.value = '';
+      filterPublications();
+      publicationSearch.focus();
+    });
+    document.querySelectorAll('.publication-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        publicationSearch.value = '';
+        filterPublications();
+      });
+    });
+    document.querySelector('.publication-search').hidden = false;
+    filterPublications();
+  }
 
 
   /* =======================
@@ -144,8 +197,10 @@ document.addEventListener("DOMContentLoaded", function() {
   imageLink = document.querySelectorAll(".page__content a img, .post__content a img, .gallery__image a img");
 
   if (imageLink) {
-    for (const i = 0; i < imageLink.length; i++) imageLink[i].parentNode.classList.add("image-link");
-    for (const i = 0; i < imageLink.length; i++) imageLink[i].classList.add("no-lightense");
+    for (const image of imageLink) {
+      image.parentNode.classList.add("image-link");
+      image.classList.add("no-lightense");
+    }
   };
 
   if (lightense) {

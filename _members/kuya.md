@@ -1,17 +1,12 @@
 ---
-username: 
-name: Kuya Takemi
-role: alumni
-image: '/images/students/kuya.jpg'
-location: 
-website:
-facebook:
-twitter: 
-instagram: 
-pinterest:
-mastodon: 
-youtube:
-tiktok:
-year: 2017
-thesis: Autonomous Aerial Exploration
+title: "Kuya Takami"
+name: "Kuya Takami"
+role: "alumni"
+image: "/images/students/kuya.jpg"
+start_year: 2016
+end_year: 2017
+role_title: "Former Postdoctoral Researcher"
+research_summary: "Autonomous aerial exploration"
+bio: "Kuya Takami conducted research in autonomous aerial exploration."
+layout: "member"
 ---

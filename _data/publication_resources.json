@@ -1,0 +1,146 @@
+{
+  "IwaBloLeePNIPS26": {
+    "preprint": "https://arxiv.org/abs/2605.16644",
+    "overview": "/score-kalman-filter-research"
+  },
+  "CClaITAC26": {
+    "preprint": "https://arxiv.org/abs/2604.18706",
+    "overview": "/uncertainty-hybrid-systems"
+  },
+  "CLeePICDC26": {
+    "preprint": "https://arxiv.org/abs/2604.06708",
+    "overview": "/uncertainty-hybrid-systems"
+  },
+  "CWicBonITAC26": {
+    "preprint": "https://arxiv.org/abs/2412.10519",
+    "overview": "/invariant-kalman-filter-relative-dynamics"
+  },
+  "LeeChiITAC26": {
+    "preprint": "https://arxiv.org/abs/2510.19991",
+    "overview": "/brownian-motion-on-manifolds"
+  },
+  "YuLeeITCST26": {
+    "preprint": "https://arxiv.org/abs/2502.20500",
+    "code": "https://github.com/fdcl-gwu/gym-rotor",
+    "overview": "/equiv-rl"
+  },
+  "YuLeeIRAL25": {
+    "code": "https://github.com/fdcl-gwu/gym-rotor-modularRL",
+    "overview": "/reinforcement-learning-quadrotor"
+  },
+  "WicYuPICUAS26": {
+    "preprint": "https://arxiv.org/abs/2606.19176",
+    "overview": "/vision-based-maritime-flight"
+  },
+  "WicYuLeePICUAS25": {
+    "preprint": "https://arxiv.org/abs/2502.05409",
+    "overview": "/vision-based-maritime-flight"
+  },
+  "WicLeeAJGCD25": {
+    "code": "https://github.com/fdcl-gwu/TNN-MO",
+    "overview": "/vision-based-maritime-flight"
+  },
+  "SimWicLeeAJGCD26": {
+    "overview": "/pointnet"
+  },
+  "YuLiuWicPIICRA27": {
+    "overview": "/revisable-robot-maps"
+  },
+  "LiuYuWicPIICRA27": {
+    "overview": "/revisable-robot-maps"
+  },
+  "CLeePIWLHMNC24": {
+    "overview": "/variational-integrators"
+  },
+  "WanLeeSJADS22": {
+    "preprint": "https://arxiv.org/abs/2203.02548",
+    "overview": "/fourier-uncertainty-so3"
+  },
+  "LeeIJAA22": {
+    "preprint": "https://arxiv.org/abs/1809.10533",
+    "code": "https://github.com/fdcl-gwu/FFTSO3",
+    "overview": "/fourier-uncertainty-so3"
+  },
+  "LeeLeoPICDC08": {
+    "preprint": "https://arxiv.org/abs/0803.1515",
+    "overview": "/fourier-uncertainty-so3"
+  },
+  "WanLeeITAC22": {
+    "overview": "/matrix-fisher-attitude-estimation"
+  },
+  "WanLeePACC20": {
+    "overview": "/matrix-fisher-attitude-estimation"
+  },
+  "CWicLeePISNCS25": {
+    "overview": "/invariant-kalman-filter-relative-dynamics"
+  },
+  "GamLeeCEP24": {
+    "overview": "/vision-based-maritime-flight"
+  },
+  "WanGamITAC22": {
+    "overview": "/matrix-fisher-attitude-estimation"
+  },
+  "GamLeeAJDSMC22": {
+    "overview": "/geometric-quadrotor-aerial-transportation"
+  },
+  "WanLeeSPL20": {
+    "overview": "/matrix-fisher-attitude-estimation"
+  },
+  "WanLeeA19": {
+    "overview": "/fourier-uncertainty-so3"
+  },
+  "BisLeeITCST21": {
+    "overview": "/geometric-quadrotor-aerial-transportation"
+  },
+  "KulLeeJAS22": {
+    "overview": "/low-thrust-mission-design"
+  },
+  "LeeChaAJDSMC18": {
+    "overview": "/geometric-attitude-control"
+  },
+  "LeeITAC18": {
+    "overview": "/matrix-fisher-attitude-estimation"
+  },
+  "KulLeePAASC16": {
+    "overview": "/low-thrust-mission-design"
+  },
+  "KulLeeJAS19": {
+    "overview": "/low-thrust-mission-design"
+  },
+  "LeeITCST18": {
+    "overview": "/geometric-quadrotor-aerial-transportation"
+  },
+  "GooLeeAJDSMC16": {
+    "overview": "/geometric-quadrotor-aerial-transportation"
+  },
+  "LeeITAC15": {
+    "overview": "/geometric-attitude-control"
+  },
+  "LeeAJDSMC15": {
+    "overview": "/fourier-uncertainty-so3"
+  },
+  "GooLeeIJCAS15": {
+    "overview": "/geometric-quadrotor-aerial-transportation"
+  },
+  "LeeLeoAA14": {
+    "overview": "/variational-integrators"
+  },
+  "LeeLeoAJC13": {
+    "overview": "/geometric-quadrotor-aerial-transportation"
+  },
+  "LeeLeoND11": {
+    "overview": "/variational-integrators"
+  },
+  "LeeSCL12": {
+    "overview": "/geometric-attitude-control"
+  },
+  "LeeLeoIJNME09": {
+    "overview": "/variational-integrators"
+  },
+  "LeeLeoCMDA07": {
+    "overview": "/variational-integrators"
+  },
+  "LeeLeoCMAME07": {
+    "overview": "/variational-integrators"
+  }
+}

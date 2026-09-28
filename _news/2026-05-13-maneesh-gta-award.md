@@ -1,6 +1,7 @@
 ---
 layout: news
 title: Maneesha Wickramasuriya Receives Outstanding Graduate Teaching Assistant Award
+card_title: Maneesha Receives Outstanding Graduate Teaching Assistant Award
 description: Recognizing Maneesh’s dedication to teaching and undergraduate mentorship.
 date: 2026-05-13
 author: Taeyoung

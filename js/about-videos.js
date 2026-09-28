@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function playVideo() {
     const video = activeVideo;
     if (!video || !shouldPlay || document.hidden) return;
-    video.play().catch(function () {
+    video.play().catch(function (error) {
+      // Switching slides can interrupt an earlier play request.
+      if (error.name === "AbortError") return;
       // Keep the preview and offer manual playback when autoplay is blocked.
       if (video === activeVideo && video.paused) {
         shouldPlay = false;
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     videos.forEach(function (video) {
       if (video !== activeVideo) {
         video.pause();
-        video.currentTime = 0;
+        // Leave playback positions intact; seeking hidden videos can stall WebKit.
       }
     });
     updateButton();

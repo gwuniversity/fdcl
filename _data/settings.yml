@@ -15,9 +15,9 @@ menu_settings:
       url: "/"
     - title: "Research"
       url: "/research/"
-    - title: "Experiment"
+    - title: "Experiments"
       url: "/experiment/"
-    - title: "Publication"
+    - title: "Publications"
       url: "/publication/"
       # submenu:
       # - title: "By type"
@@ -28,7 +28,7 @@ menu_settings:
       #   url: "/publication_y/"
     - title: "Team"
       url: "/members/"
-    - title: "Open Position"
+    - title: "Join the Lab"
       url: "/open_position/"
 
 # Call to action button
@@ -67,27 +67,86 @@ recommended:
   recommended_tag: "Research"
 
 
-# Experiment: Add your youtube video id and caption to display in the experiment section.
+# Experiments: group is agile, transport, or perception. Use youtube_id or video + poster.
 experiment:
-- {youtube_id: "dfWmVE0wvoE", caption: "Vision-in-the-loop validation"}
-- {youtube_id: "TGBQTuKpbAw", caption: "Equivariant reinforcement learning"}
-- {youtube_id: "-NQ6oRsdWgI", caption: "Modular reinforcement learning"}
-- {youtube_id: "_WXyo45Oo1Y", caption: "Autonomous landing on ship"}
-- {youtube_id: "iOOaV7SKJ1g", caption: "Autonomous payload transportation"}
-- {youtube_id: "a-DG2PcUu7k", caption: "Quadrotor backflip in wind"}
-- {youtube_id: "wtn9L6BsYiE", caption: "Quadrotor backflip"}
-- {youtube_id: "ouSsrDfi8DM", caption: "Quadrotor hovering in wind"}
-- {youtube_id: "9e71BL-I07E", caption: "Delayed RTK GPS"}
-- {youtube_id: "Tx_WsYDYz7g", caption: "Laser-guided landing"}
-- {youtube_id: "I_1rXV2XRqk", caption: "Autonomous aerial exploration"}
-- {youtube_id: "CRQfhhICSj0", caption: "Autonomous ground exploration"}
-- {youtube_id: "RyTmWVbgt34", caption: "Autonomous aerial transportation"}
-- {youtube_id: "dsmAbwQram4", caption: "Constrained attitude control"}
+- caption: Flying inverted pendulum
+  group: agile
+  video: /videos/inv_pend.mp4
+  poster: /images/video-posters/inv_pend.jpg
+  summary: Tests geometric control and learned dynamics corrections while a quadrotor balances an upright pendulum in flight.
+  research: /learning-flying-inverted-pendulum
+- caption: Equivariant reinforcement learning
+  group: agile
+  youtube_id: TGBQTuKpbAw
+  summary: Evaluates the transfer of control policies that incorporate the symmetries of quadrotor dynamics.
+  research: /equiv-rl
+- caption: Modular reinforcement learning
+  group: agile
+  youtube_id: -NQ6oRsdWgI
+  summary: Tests learned flight control with separate policies for translational and yaw motion.
+  research: /reinforcement-learning-quadrotor
+- caption: Quadrotor backflip in wind
+  group: agile
+  youtube_id: a-DG2PcUu7k
+  summary: Tests adaptive geometric control during a large-angle maneuver under wind disturbances.
+  research: /geometric-quadrotor-aerial-transportation
+- caption: Quadrotor backflip
+  group: agile
+  youtube_id: wtn9L6BsYiE
+  summary: Demonstrates flight control through a complete rotation and recovery to upright flight.
+  research: /geometric-quadrotor-aerial-transportation
+- caption: Quadrotor hovering in wind
+  group: agile
+  youtube_id: ouSsrDfi8DM
+  summary: Evaluates position regulation and disturbance rejection during hovering flight.
+  research: /geometric-quadrotor-aerial-transportation
+- caption: Constrained attitude control
+  group: agile
+  youtube_id: dsmAbwQram4
+  summary: Examines attitude maneuvers with restrictions on the directions a rigid body may point.
+  research: /geometric-attitude-control
+- caption: Autonomous payload transportation
+  group: transport
+  youtube_id: iOOaV7SKJ1g
+  summary: Tests trajectory tracking for a suspended payload while controlling the coupled motion of the vehicle and load.
+  research: /geometric-quadrotor-aerial-transportation
+- caption: Autonomous aerial transportation
+  group: transport
+  youtube_id: RyTmWVbgt34
+  summary: Demonstrates aerial load transportation, where vehicle motion must account for the dynamics of the suspended load.
+  research: /geometric-quadrotor-aerial-transportation
+- caption: Indoor maritime validation
+  group: perception
+  youtube_id: dfWmVE0wvoE
+  summary: Tests onboard perception, estimation, and autonomous flight with a physical UAV and an indoor visual emulation of a maritime environment.
+  research: /vision-based-maritime-flight
+- caption: Autonomous shipboard landing
+  group: perception
+  youtube_id: _WXyo45Oo1Y
+  summary: Demonstrates autonomous landing during shipboard flight, complementing controlled indoor validation.
+  research: /vision-based-maritime-flight
+- caption: Navigation with delayed RTK GPS
+  group: perception
+  youtube_id: 9e71BL-I07E
+  summary: Tests autonomous flight using state estimates that account for delayed localization measurements.
+- caption: Laser-guided landing
+  group: perception
+  youtube_id: Tx_WsYDYz7g
+  summary: Demonstrates the use of laser measurements to guide a UAV to a landing surface.
+- caption: Autonomous aerial exploration
+  group: perception
+  youtube_id: I_1rXV2XRqk
+  summary: Demonstrates mapping and exploration with an aerial robot.
+- caption: Autonomous ground exploration
+  group: perception
+  youtube_id: CRQfhhICSj0
+  summary: Demonstrates autonomous exploration with a ground robot.
 
 member_type:
-- {role: "postdoc", name: "Postdoc"}
+- {role: "professor", name: "Lab Director"}
+- {role: "postdoc", name: "Postdoctoral Researchers"}
 - {role: "graduate", name: "Graduate Students"}
-- {role: "undergraduate", name: "Undergraduate Student"}
+- {role: "undergraduate", name: "Undergraduate Students"}
 - {role: "alumni", name: "Alumni"}
 
 #-------------------------------
@@ -105,7 +164,7 @@ about:
 
   # about_image: images/Lee.png
   # about_image_alt: Taeyoung Lee
-  about_button_text: Meet our team
+  about_button_text: Meet the Team
   about_button_link: "/members/"
   about_videos:
 
@@ -161,7 +220,7 @@ contact:
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus_identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+disqus_identifier: false # Comments are disabled on lab articles.
 
 
 #-------------------------------

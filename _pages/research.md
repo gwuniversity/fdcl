@@ -1,107 +1,66 @@
 ---
 layout: page
 title: Research
-description: We investigate how differential geometry can be utilized in control systems engineering and machine learning.
+description: A geometric approach to dynamics, learning, and autonomy.
 permalink: /research/
-toc: true
+toc: false
 ---
 
-Our research focuses on how differential geometry can be utilized across various topics in dynamical systems theory and control systems engineering, including computational mechanics, optimization, estimation, control, and machine learning, with primary applications in aerospace engineering and robotics.
+We develop mathematical and computational foundations for understanding, controlling, and learning the motion of complex systems. Our research integrates differential geometry and applied mathematics with dynamics, control, estimation, optimization, and artificial intelligence. Applications in robotics and aerospace engineering connect this foundational work to computational studies and experimental validation, including autonomous UAV flight.
 
-We assert that by embracing the geometric structure of dynamical systems, we can construct more efficient, robust, and elegant control strategies for modern, complex systems.
+Geometry provides a common language across these problems. Orientations and constrained configurations evolve on curved spaces; symmetries reveal equivalent motions; and mechanical structure governs how systems exchange energy and momentum. By incorporating these properties into controllers, probability models, learning algorithms, and numerical methods, we seek stability guarantees, faithful uncertainty representations, efficient learning, and reliable simulation.
 
-
-![Woman]({{site.baseurl}}/images/cat2.png#wide)
-*Falling cat problem: When a cat falls, it appears to “rotate” in mid-air to reorient itself and land on its feet, even if it starts from rest with no initial angular momentum. How does the cat achieve this without violating the conservation of angular momentum, which states that the total angular momentum of a system remains constant in the absence of external torques?*
-
-
-***
-
-### Geometric Deep Learning
-
-Geometric deep learning refers to a class of machine learning methods that generalize deep learning to data structured in non-Euclidean domains, such as graphs, manifolds, and other geometric spaces. These approaches leverage the underlying geometry of the problem to improve learning efficiency and generalization.
-
-In particular, we have shown that symmetry and equivariance properties of dynamical systems can be exploited to significantly improve the data efficiency of deep reinforcement learning for unmanned aerial vehicles.
-
-<div class="gallery-box">
-  <div class="gallery gallery-column-2"> 
-    <div style="width: 700px; height: 380px"> <iframe src="https://www.youtube.com/embed/-NQ6oRsdWgI" loading="lazy" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-<em>Modular reinforcement learning of a quadrotor UAV</em>
+<div class="research-cat">
+  <img src="{{ '/images/cat2.png' | relative_url }}" alt="Falling cat reorienting itself in midair" width="2498" height="540">
 </div>
 
-{% include section-recommended-in-research.html %}
+**An intuitive example: the falling cat.** A falling cat can reorient itself even when it begins with zero angular momentum. Coordinated changes in its shape produce an overall change in orientation while conserving angular momentum. This illustrates how geometry helps explain—and design—motion that is difficult to understand from forces and torques alone.
 
-***
+<nav class="research-topics__nav" aria-label="Research areas">
+  <a href="#geometric-control">Geometric Control and Optimization</a>
+  <a href="#geometric-deep-learning">Geometric Deep Learning and AI</a>
+  <a href="#uncertainty-propagation-and-estimation">Uncertainty Propagation and Estimation</a>
+  <a href="#robotic-perception-and-autonomous-systems">Robotic Perception and Autonomous Systems</a>
+  <a href="#computational-geometric-mechanics">Computational Geometric Mechanics</a>
+</nav>
 
-### Geometric Control
+## Geometric Control and Optimization
+{: #geometric-control .research-topic__heading }
 
-Control systems formulated in local coordinates of a configuration manifold often suffer from singularities, ambiguities, and increased complexity when representing aggressive or large-scale maneuvers.
+<span id="computational-geometric-optimal-control"></span>
+Large rotations, coupled payload motion, and limited propulsion challenge controllers and planners built around small deviations from a nominal state. We develop control and optimization methods directly on the geometric spaces where these systems evolve, accounting for both nonlinear dynamics and topological restrictions on stabilization. Our work spans rigid-body attitude control, agile quadrotor flight, cooperative aerial transportation, flapping-wing vehicles, and low-thrust space missions. These methods connect stability analysis and trajectory optimization to demanding maneuvers and physical experiments.
 
-By explicitly leveraging geometric properties of nonlinear manifolds in Lyapunov-based stability analysis, we construct intrinsic control laws that are globally defined and avoid coordinate singularities, while ensuring rigorous stability guarantees.
+{% include research-topic-cards.html slugs="geometric-attitude-control,geometric-quadrotor-aerial-transportation,low-thrust-mission-design,flapping-wing-uav-control" %}
 
-<div class="gallery-box">
-  <div class="gallery gallery-column-2"> 
-    <div style="width: 350px; height: 210px; margin-right:10px"><iframe src="https://www.youtube.com/embed/nOWErfdzZLU" loading="lazy" frameborder="0" allowfullscreen></iframe></div>
-    <div style="width: 350px; height: 210px"><iframe src="https://www.youtube.com/embed/tMmmaVAm5D0" loading="lazy" frameborder="0" allowfullscreen></iframe></div>
-  </div>
-  <em>Geometric control of aerial vehicles</em>
-</div>
+## Geometric Deep Learning and AI
+{: #geometric-deep-learning .research-topic__heading }
 
-***
+Learning to control a physical system becomes more efficient when algorithms account for its symmetries and dynamical structure. We develop equivariant and modular reinforcement learning methods that recognize equivalent motions, exploit relationships among subsystems, and combine learned policies with geometric controllers. Applications include quadrotor flight and balancing a flying inverted pendulum. By connecting mathematical structure with learning and flight data, we seek to reduce training demands and improve the transfer of policies from simulation to hardware.
 
-### Uncertainty Propagation and Estimation
+{% include research-topic-cards.html slugs="equiv-rl,reinforcement-learning-quadrotor,learning-flying-inverted-pendulum" %}
 
-We develop intrinsic representations of probability distributions on manifolds, moving beyond Gaussian approximations in local coordinates that are commonly used in engineering practice.
+## Uncertainty Propagation and Estimation
+{: #uncertainty-propagation-and-estimation .research-topic__heading }
 
-In particular, we have constructed the *matrix Fisher–Gaussian distribution* on the product space of the special orthogonal group and Euclidean space, as well as approaches based on *non-commutative harmonic analysis*. These methods enable accurate uncertainty propagation and Bayesian estimation while respecting the underlying geometry of the state space.
+Uncertainty can spread across a curved state space, develop multiple distinct possibilities, or change abruptly during an impact. We develop geometric probability models and estimation methods that capture these effects beyond conventional local or Gaussian approximations. Our approaches include **noncommutative harmonic analysis on Lie groups and Fourier transforms on SO(3)**, matrix Fisher distributions, invariant filtering, and score-based estimation. Research on Brownian motion and hybrid systems provides foundations for tracking uncertainty through continuous motion, discrete resets, and changes in state dimension.
 
-<div class="gallery-box">
-  <div class="gallery gallery-column-3">
-    <img src="{{ "/images/uprop.png" | relative_url }}" loading="lazy" style="width: 380px; overflow: hidden" >
-    <img src="{{ "/images/NSF14_Diff_1_CSph.png" | relative_url }}" loading="lazy" style="width: 150px; overflow: hidden" >
-    <img src="{{ "/images/NSF14_Diff_5_CSph.png" | relative_url }}" loading="lazy" style="width: 150px; overflow: hidden" >
-  </div>
-  <em>Spectral uncertainty propagation</em>
-</div>
+{% include research-topic-cards.html slugs="score-kalman-filter-research,fourier-uncertainty-so3,matrix-fisher-attitude-estimation,uncertainty-hybrid-systems,invariant-kalman-filter-relative-dynamics,brownian-motion-on-manifolds" %}
 
-***
+## Robotic Perception and Autonomous Systems
+{: #robotic-perception-and-autonomous-systems .research-topic__heading }
 
-### Computational Geometric Optimal Control
+Autonomous robots must infer their own motion and understand environments that are changing around them. We combine learned visual and LiDAR representations with geometric estimation and persistent 3D mapping to track moving objects, revise scene interpretations, and navigate relative to moving platforms. Applications range from dynamic scene understanding to ship-relative UAV navigation. Laboratory and shipboard experiments help evaluate how these methods handle incomplete observations, changing viewpoints, and real sensing conditions.
 
-This formalism enables efficient computation of optimal maneuvers for complex dynamical systems by leveraging principles from computational geometric mechanics.
+{% include research-topic-cards.html slugs="revisable-robot-maps,vision-based-maritime-flight,pointnet" %}
 
-We have shown that discretizing optimal control problems using geometric integrators significantly improves numerical efficiency and preserves key structural properties. Furthermore, we have developed accelerated optimization methods on manifolds by discretizing Bregman Lagrangian mechanics.
+## Computational Geometric Mechanics
+{: #computational-geometric-mechanics .research-topic__heading }
 
-<div class="gallery-box">
-  <div class="gallery gallery-column-3">
-    <img src="{{ "/images/opt_ast.jpg" | relative_url }}" loading="lazy" style="width: 170px; overflow: hidden" >
-    <img src="{{ "/images/opt_L2.png" | relative_url }}" loading="lazy" style="width: 170px; overflow: hidden" >
-    <img src="{{ "/images/opt_vis.pdf" | relative_url }}" loading="lazy" style="width: 360px; overflow: hidden" >
-  </div>
-  <em>Asteroid exploration; Earth-to-Moon transfer; vision-based localization</em>
-</div>
+Long simulations can accumulate numerical errors that distort a system’s physical behavior. We develop **variational integrators and other geometric numerical methods** by building the structure of mechanics into the discrete equations. For appropriate models, these methods preserve rotation constraints, symplectic structure, and momentum, while providing favorable long-term energy behavior. Applications include interacting rigid bodies, tethered spacecraft, flexible structures, and stochastic impacts. This work supplies a computational foundation for simulation, trajectory optimization, and uncertainty propagation.
 
-***
+{% include research-topic-cards.html slugs="variational-integrators" %}
 
-### Computational Geometric Mechanics
-
-We develop geometric numerical integrators on manifolds that preserve the intrinsic structure of dynamical systems, such as symplecticity, momentum, and energy behavior.
-
-These structure-preserving properties are critical for ensuring long-term stability, accuracy, and physical fidelity in numerical simulations of complex systems.
-
-<div class="gallery-box">
-  <div class="gallery gallery-column-3">
-    <img src="{{ "/images/1999kw4small.jpg" | relative_url }}" loading="lazy" style="width: 260px; overflow: hidden" >
-    <img src="{{ "/images/3drod.jpg" | relative_url }}" loading="lazy" style="width: 200px; overflow: hidden" >
-    <img src="{{ "/images/3dmd.jpg" | relative_url }}" loading="lazy" style="width: 170px; overflow: hidden" >
-  </div>
-  <em>Structure-preserving numerical integration for binary asteroids, rod dynamics, and molecular systems</em>
-</div>
-
-***
-
-### Acknowledgments
+## Acknowledgments
+{: .research-topic__heading }
 
 Our research has been supported by AFOSR, AFRL, NASA, NAVAIR, NRL, NSF, and ONR.

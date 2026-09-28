@@ -2,15 +2,17 @@
 layout: null
 ---
 [
-  {% assign searchable = site.posts | concat: site.pages %}
-  {% assign filtered = searchable | where_exp: "item", "item.title" %}
+  {% assign searchable = site.posts | concat: site.news | concat: site.members | concat: site.pages %}
+  {% assign filtered = searchable | where_exp: "item", "item.title" | where_exp: "item", "item.search != false" | uniq: "url" %}
   {% for item in filtered %}
+    {% capture searchable_content %}{{ item.description }} {{ item.role_title }} {{ item.research_summary }} {{ item.bio }} {{ item.thesis_title }} {{ item.content }}{% endcapture %}
+    {% capture metadata %}{% if item.collection == 'members' %}Team · {{ item.role_title }}{% elsif item.collection == 'news' %}News · {{ item.date | date: "%b %-d, %Y" }}{% elsif item.collection == 'posts' %}Research · {{ item.date | date: "%b %-d, %Y" }}{% else %}Page{% endif %}{% endcapture %}
     {
       "title"   : {{ item.title | jsonify }},
-      "content" : {{ item.content | strip_html | strip_newlines | jsonify }},
+      "content" : {{ searchable_content | strip_html | markdownify | strip_html | normalize_whitespace | jsonify }},
       "url"     : {{ item.url | relative_url | jsonify }},
-      "date"    : {{ item.date | date_to_string | jsonify }},
-      "image" : {{ item.image | default: "/favicon.ico" | relative_url | jsonify }}
+      "metadata": {{ metadata | strip | jsonify }},
+      "image" : {{ item.thumbnail | default: item.image | default: "/favicon.ico" | relative_url | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

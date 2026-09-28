@@ -1,42 +1,49 @@
 ---
 layout: page
 title: Team
-description: Welcome to our team page, where you can get to know the talented individuals behind the projects and the videos that shape our lab. 
+description: Meet the researchers and students connecting geometric foundations, computational methods, and experiments in robotics and aerospace engineering.
 permalink: /members/
-excerpt: "Meet our team members here"
+excerpt: Meet the FDCL team.
+toc: false
 ---
 
-{% assign members_ordered = site.members | sort: 'year' | reverse %}
-{% for member_type in site.data.settings.member_type %}
-
-##  {{ member_type.name }}
-
-  <section class="section authors animate">
-    <div class="container">
-      <div class="section__inner">
-        <div class="row">
-          {% for member in members_ordered %}
-            {% if member.role == member_type.role %}
-            {% assign post_count = site.posts | where:"author", member.username %}
-            <div class="col col-4 col-w-6 col-t-12">
-              <div class="authors__info">
-                <a class="authors__image" href="{{ member.url | relative_url }}"><img src="{{ member.image | relative_url }}" alt="{{ member.name }}"></a>
-                <div class="authors__meta">
-                  <h2 class="authors__name"><a class="authors__link" href="{{ member.url | relative_url }}">{{ member.name }}</a></h2>
-                  {% if post_count.size >= 1 %}
-                  <span class="authors__posts__count">({{ post_count.size }})</span>
-                  {% endif %}
-                </div>
-                {% if member.content %}
-                <div class="authors__description">{{ member.thesis }}</div>
-                {% endif %}
-              </div>
-            </div>
-            {% endif %}
-          {% endfor %}
+<div class="team-directory">
+  <nav class="team-nav" aria-label="Team sections">
+    {% for member_type in site.data.settings.member_type %}
+    <a href="#team-{{ member_type.role }}">{{ member_type.name }}</a>
+    {% endfor %}
+  </nav>
+  {% for member_type in site.data.settings.member_type %}
+  {% assign group = site.members | where: 'role', member_type.role %}
+  {% if member_type.role == 'alumni' %}
+    {% assign group = group | sort: 'end_year' | reverse %}
+  {% else %}
+    {% assign group = group | sort: 'name' %}
+  {% endif %}
+  {% if group.size > 0 %}
+  <section class="team-section{% if member_type.role == 'alumni' %} team-section--alumni{% endif %}" id="team-{{ member_type.role }}">
+    <h2>{{ member_type.name }}</h2>
+    <div class="team-grid">
+      {% for member in group %}
+      <article class="team-card{% if member_type.role == 'professor' %} team-card--director{% endif %}">
+        <a class="team-card__portrait" href="{{ member.url | relative_url }}" aria-hidden="true" tabindex="-1"><img class="no-lightense" src="{{ member.image | relative_url }}" alt="" loading="lazy" width="100" height="100"></a>
+        <div class="team-card__content">
+          <h3><a href="{{ member.url | relative_url }}">{{ member.name }}</a></h3>
+          <p class="team-card__role">{{ member.role_title }}</p>
+          {% if member.role == 'alumni' %}
+            {% if member.degree %}<p class="team-card__dates">{{ member.degree }}</p>{% endif %}
+            <p class="team-card__dates">Lab: {{ member.start_year }}–{{ member.end_year }}</p>
+          {% elsif member.appointment_start_year %}
+            <p class="team-card__dates">{{ member.appointment_start_year }}–present</p>
+          {% elsif member.start_year %}
+            <p class="team-card__dates">{{ member.start_year }}–present</p>
+          {% endif %}
+          <p class="team-card__research">{{ member.research_summary }}</p>
         </div>
-      </div>
+      </article>
+      {% endfor %}
     </div>
   </section>
-
-{% endfor %}
+  {% endif %}
+  {% endfor %}
+</div>

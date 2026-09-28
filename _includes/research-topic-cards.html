@@ -1,0 +1,9 @@
+{% assign topic_slugs = include.slugs | split: ',' %}
+<div class="research-topic__cards section-recommended">
+  {% for topic_slug in topic_slugs %}
+    {% assign topic_post = site.posts | where: 'slug', topic_slug | first %}
+    {% if topic_post %}
+      {% include research-card.html post=topic_post heading="h3" %}
+    {% endif %}
+  {% endfor %}
+</div>

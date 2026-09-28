@@ -67,8 +67,9 @@
               </div>
 
               <div class="article__content">
+                <time class="article__date" datetime="{{ news.date | date_to_xmlschema }}">{{ news.date | date: "%b %-d, %Y" }}</time>
                 <h2 class="article__title">
-                  <a href="{{ news.url | relative_url }}">{{ news.title }}</a>
+                  <a href="{{ news.url | relative_url }}">{{ news.card_title | default: news.title }}</a>
                 </h2>
                 <div class="article__info">
                   {% assign author = site.authors | where: 'username', news.author | first %}

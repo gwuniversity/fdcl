@@ -19,6 +19,13 @@ plugins:
 paginate: 6
 paginate_path: "/page/:num"
 
+# Keep unused theme examples out of the public site, sitemap, and search.
+exclude:
+  - _authors
+  - _pages/elements.md
+  - _pages/featured.html
+  - _pages/videos.html
+
 
 #-------------------------------
 # Collections

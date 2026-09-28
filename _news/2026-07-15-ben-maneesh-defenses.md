@@ -1,6 +1,7 @@
 ---
 layout: news
 title: Ben Yu and Maneesha Wickramasuriya Successfully Defend Their Doctoral Dissertations
+card_title: Ben and Maneesha Complete Their Doctoral Defenses
 description: Advancing autonomous flight through geometric reinforcement learning and vision-based maritime navigation.
 date: 2026-07-15
 author: Taeyoung

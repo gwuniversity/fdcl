@@ -93,6 +93,9 @@
 {% include_relative _3-modules/footer.scss %}
 /* >>>>>>>>>>>>>> :: 3.5-Gallery <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/gallery.scss %}
+{% include_relative _3-modules/experiment-videos.scss %}
+{% include_relative _3-modules/publications.scss %}
+{% include_relative _3-modules/team.scss %}
 /* >>>>>>>>>>>>>> :: 3.6-Hero <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/hero.scss %}
 /* >>>>>>>>>>>>>> :: 3.7-Article <<<<<<<<<<<<<<< */

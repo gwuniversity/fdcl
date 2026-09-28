@@ -1,93 +1,44 @@
 ---
 layout: default
 ---
-
-<!-- begin author -->
-<section class="section author">
-
-  <div class="container">
-    {% assign post_count = site.posts | where: 'author', page.username %}
-    <div class="author__content">
-
-      <div class="author__image">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.name }}">
-      </div>
-
-      <h1 class="author__name">{{ page.name }}</h1>
-
-      <div class="author__info">
-        {% if page.location %}
-        <span class="author__location">
-          from {{ page.location }}
-        </span> •
-        {% endif %}
-        <!-- <span class="post-count">
-          {{ post_count.size }}{% if post_count.size < 2 %}Post{% else %} posts{% endif %}
-        </span> -->
-      </div>
-
-      <div class="author__description">{{ page.thesis | markdownify  }}</div>
-
-      <div class="author__social">
-      {% if page.website %}
-        <a class="author__social__item" href="{{ page.website }}" aria-label="Website link" target="_blank" rel="noopener"><i class="fa-solid fa-link"></i></a>
-      {% endif %}
-      {% if page.linkedin %}
-        <a class="author__social__item" href="{{ page.linkedin }}" aria-label="LinkedIn link" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-      {% endif %}
-      {% if page.facebook %}
-        <a class="author__social__item" href="{{ page.facebook }}" aria-label="Facebook link" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-      {% endif %}
-      {% if page.twitter %}
-        <a class="author__social__item" href="{{ page.twitter }}" aria-label="Twitter link" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-      {% endif %}
-      {% if page.instagram %}
-        <a class="author__social__item" href="{{ page.instagram }}" aria-label="Instagram link" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-      {% endif %}
-      {% if page.pinterest %}
-        <a class="author__social__item" href="{{ page.pinterest }}" aria-label="Pinterest link" target="_blank" rel="noopener"><i class="fa-brands fa-pinterest"></i></a>
-      {% endif %}
-      {% if page.mastodon %}
-        <a class="author__social__item" href="{{ page.mastodon }}" aria-label="Mastodon link" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon"></i></a>
-      {% endif %}
-      {% if page.youtube %}
-        <a class="author__social__item" href="{{ page.youtube }}" aria-label="Youtube link" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
-      {% endif %}
-      {% if page.tiktok %}
-        <a class="author__social__item" href="{{ page.tiktok }}" aria-label="Tiktok link" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
-      {% endif %}
-      </div>
-
-    </div>
-  </div>
-
-  {% if post_count.size >= 1 %}
-  <div class="container">
-    <div class="section__inner">
-      <div class="row animate">
-        {% for post in post_count %}
-        <div class="col col-4 col-d-6 col-t-12">
-          {% include article.html %}
-        </div>
+<div class="container">
+  <header class="member-profile">
+    <a class="member-profile__back" href="{{ '/members/' | relative_url }}">← Team</a>
+    <img class="member-profile__portrait" src="{{ page.image | relative_url }}" alt="{{ page.name | escape }}" width="140" height="140">
+    <h1>{{ page.name }}</h1>
+    <p class="member-profile__role">{{ page.role_title }}{% if page.role == 'alumni' %} · FDCL Alumni{% endif %}</p>
+    {% if page.degree %}<p class="member-profile__degree">{{ page.degree }}</p>{% endif %}
+    <p class="member-profile__topic">{{ page.research_summary }}</p>
+    {% if page.website or page.linkedin %}
+    <nav class="member-profile__links" aria-label="Professional profiles">
+      {% if page.website %}<a href="{{ page.website }}">Professional website</a>{% endif %}
+      {% if page.linkedin %}<a href="{{ page.linkedin }}">LinkedIn</a>{% endif %}
+    </nav>
+    {% endif %}
+  </header>
+  <article class="page member-profile__body">
+    <div class="page__content">
+      <p>{{ page.bio }}</p>
+      {{ content }}
+      {% if page.appointments %}
+      <h2>At FDCL</h2>
+      <ul class="member-profile__appointments">
+        {% for appointment in page.appointments %}
+        <li><strong>{{ appointment.role }}</strong> · {{ appointment.dates }}</li>
         {% endfor %}
-      </div>
+      </ul>
+      {% elsif page.start_year and page.end_year %}
+      <p><strong>Lab affiliation:</strong> {{ page.start_year }}–{{ page.end_year }}</p>
+      {% endif %}
+      {% if page.thesis_title %}
+      <h2>{% if page.degree contains 'Ph.D.' %}Doctoral dissertation{% else %}Master’s thesis{% endif %}</h2>
+      <p><em>{{ page.thesis_title }}</em>{% if page.degree %}<br>{{ page.degree }}{% endif %}</p>
+      {% endif %}
+      {% if page.research_articles %}
+      <h2>Related research</h2>
+      {% include research-topic-cards.html slugs=page.research_articles %}
+      {% endif %}
+      {% if page.role == 'professor' %}<p><a href="{{ '/publication/' | relative_url }}">Full publication list</a> · <a href="{{ '/research/' | relative_url }}">Research areas</a></p>{% endif %}
     </div>
-  </div>
-  {% endif %}
-
-    <!-- begin page -->
-    <article class="page">
-      <div class="page__content">
-        {% if page.toc == true %}
-        <div class="page__toc">
-          <h2 class="page__toc__title">Table of Contents</h2>
-          {% include toc.html html=content ordered=true class="page__toc__list" h_min=2 %}
-        </div>
-        {% endif %}
-  
-        {{ content }}
-      </div>
-    </article>
-
-</section>
-<!-- end author -->
+  </article>
+</div>

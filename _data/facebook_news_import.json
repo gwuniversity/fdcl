@@ -1,0 +1,615 @@
+{
+  "imported_on": "2026-09-28",
+  "scope": "99 announcements reviewed from the available FDCL Facebook timeline, May 12, 2016–June 24, 2024. Routine publication announcements and editorial appointments are omitted at the user’s request. Original post dates are used for new articles; existing event dates are retained.",
+  "posts": [
+    {
+      "source_date": "2024-06-03",
+      "source": "https://www.facebook.com/photo/?fbid=1000360972090693&set=pcb.1000362278757229",
+      "article": "_news/2024-06-03-vicon-valkyrie-motion-capture-system-installed.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2024-06-03",
+      "source": "https://www.facebook.com/photo/?fbid=1000299775430146&set=a.478786507581478",
+      "article": "_news/2024-06-03-a-new-nvidia-a100-gpu-server-for-fdcl.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2023-12-04",
+      "source": "https://www.facebook.com/photo/?fbid=870146028445522&set=pcb.870146271778831",
+      "article": "_news/2023-12-04-congratulations-dr-zichao-hou.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2023-11-20",
+      "source": "https://www.facebook.com/photo/?fbid=860875562705902&set=pcb.860877029372422",
+      "article": "_news/2023-11-20-tejaswi-k-c-successfully-defends-his-dissertation.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2023-04-29",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0KhD4BrcRfp9Tok8yJAfA953Dzt35vwe97neDS7EA1DENTwpR7P2W9gZ1v3ndMGz4l",
+      "article": "_news/2023-04-29-karl-simon-awarded-a-dod-smart-scholarship.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2023-04-29",
+      "source": "https://www.facebook.com/photo/?fbid=722054876587972&set=pcb.722055186587941",
+      "article": "_news/2023-04-29-fdcl-at-the-2023-gw-engineering-showcase.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2023-04-29",
+      "source": "https://www.facebook.com/photo/?fbid=722053656588094&set=pcb.722053753254751",
+      "article": "_news/2023-04-29-a-spring-bike-ride-with-professor-weis-group.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2023-04-29",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02V9LFab61tQo7xUEZYwXjz9XyAnk7na56NZ3nq56Y8esCWtrZKsTsD26EGuvGBtprl",
+      "article": "_news/2023-04-29-onr-funds-chase-research-on-humanai-collaboration.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2023-04-29",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0AbHaGvan6NW27DXQtJD9thZQqnW8EfgbQnotvp3qqNQjGVtqGAgEgq5DJHwthFAPl",
+      "action": "ignored",
+      "omitted_article": "_news/2023-04-29-taeyoung-lee-joins-the-ieee-taes-editorial-board.md",
+      "reason": "Editorial appointment"
+    },
+    {
+      "source_date": "2022-11-03",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02htFP55GF5H8JvN3XMbcVA7n3sGM8aGN9ncHn8QCJbJ4BPWERifUT8DqLfoG17YVWl",
+      "action": "ignored",
+      "omitted_article": "_news/2022-11-03-taeyoung-lee-joins-the-ieee-tcst-editorial-board.md",
+      "reason": "Editorial appointment"
+    },
+    {
+      "source_date": "2022-11-03",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0uUKztHAMrQf3QWC175CKAEYpQNYtHLUrGHSmnhg48ix9Rw7hAmbbYkqGSgSG4K6rl",
+      "article": "_news/2022-11-03-tejaswi-presents-flapping-wing-imitation-learning-at-iros-2022.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2022-11-03",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02eHSPiLa4C5Zw6jCuZomFji88zZ3oysTvr1eA95ENCUQrAn7HV1z1hC6hBnkcRP3tl",
+      "article": "_news/2022-11-03-weixin-wang-completes-his-doctoral-research.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2022-06-22",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02RWZJCg65yQ1QJ4U9oV62Ks7988QvWUf6Qtixfg15LCgrYNeSDiHabdKCDpdqFsbdl",
+      "article": "_news/2022-06-22-congratulations-dr-kanishke-gamagedara.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2022-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02QPo6mFtdcLiHpSACU1CXmXMPF64je7mdVEL5SCCe5CC49GkNdXW2cGeNZeMKqzsZl",
+      "article": "_news/2022-05-20-ship-imagery-for-object-tracking-and-segmentation.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2022-04-27",
+      "source": "https://www.facebook.com/photo/?fbid=3153985664858174&set=pcb.3153985841524823",
+      "article": "_news/2022-04-27-fdcl-research-at-the-2022-seas-r-d-showcase.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2022-04-26",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02u3D6ogK8jY4XhZDMQ7tKxuFnjqfVj23gRSmp1Wqs7ixgggj9vAJzwDAcwc1SgKMtl",
+      "article": "_news/2022-04-27-fdcl-research-at-the-2022-seas-r-d-showcase.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2022-04-26",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid04ZVCb1okN6FK5mYRnPb7KsPRPG6vMvs4xF9rA1hHzaVBcdUfyWs8gSbfS37MWCccl",
+      "article": "_news/2022-04-26-fdcl-and-iasl-ride-to-hains-point.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-07-06",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02fLhtuGcir13dALopbAksH5pavdTBeRDNtvPHsxTsuRaDBLS386SQKovFPJ5VsGypl",
+      "article": "_news/2021-07-06-mahdis-bisheban-joins-the-university-of-calgary.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2021-07-06",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02EcUpii5q2iFAaDvQAg8pP3xCfrniaJRL6337S7yg4zPu7QNCcmtJPXgcbrpt6Qfl",
+      "article": "_news/2021-07-06-mahdis-bisheban-joins-the-university-of-calgary.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2021-07-06",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02No5QCRm5G8Gau4zfPU98Ar9KLy1DE55NpuZYxJEdjbhV3tZXfSvDoyhQPuXAZ6hEl",
+      "article": "_news/2021-07-06-fdcl-alumni-gather-at-professor-wus-home.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-06-29",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid029Q9yVQwH13XKDPboo4RAu54AC7nHvirgUVeQgSHG1pi9ZGMjcfwSwogcL8jzMigVl",
+      "article": "_news/2021-06-29-vision-based-3d-reconstruction-by-kanishke-gamagedara.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-06-29",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0fAYsmeKqwRfYzhziL4UguUYeDqYhY6VrwoQia4HQYCpCLbi9rGrbfrhnsqwP9f1Wl",
+      "article": "_news/2021-06-29-shankar-kulumani-joins-johns-hopkins-apl.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-06-29",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0EBstsFmR7o2iTNHVkCo96gn6Lj3KFf6KxtStyphoYEB1Lk4UPBUmmAUHGtomHroMl",
+      "article": "_news/2021-06-29-preliminary-shipboard-flight-experiments-in-chesapeake-bay.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-06-17",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid025VSCng79i3Zw4FMoStbfwQEuzZZ6feBKMJzNYpiK4fVjgNukZDoWBUrJE4Tu8Uu8l",
+      "article": "_news/2021-06-17-evan-kaufman-contributes-to-autonomous-mowing-at-scythe.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-06-06",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02BMjXcBrtWGVqK98uTjRggJwtbifbyqVtmsWtrbnp4w6wvRv4n9J5faviaL5T5s9dl",
+      "article": "_news/2021-06-06-fdcl-reunion-2021.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02bVv9ypxUyJENWzDqSp6HZLonHaP3KSUKYkKv3Jamjaxs5UnHzizYYehG5K3QTGLDl",
+      "action": "ignored",
+      "omitted_article": "_news/2021-05-20-matrix-fishergaussian-models-for-attitude-estimation.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2021-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02Unakr5gqVp769qFztp4Uo4idDnYQGB4vGPoGkKK732r2Yjk6vCJ3Xi7y6o8ebsGml",
+      "article": "_news/2021-05-20-fdcl-adds-an-nvidia-a100-gpu-workstation.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2021-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02Q1JHLk4ACvkvPdBeXz4PCQEkZSejpsVP2fZdULLdWxQftaiPv4Sw8423FHJMY2cCl",
+      "action": "ignored",
+      "omitted_article": "_news/2021-05-20-how-abdomen-motion-influences-butterfly-flight.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2021-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0NudWdowiPwNSLtekGYquZ1ie253yA9LgRH2uXwLNyFhbhYJWHApSwZZnHnnrQSCUl",
+      "action": "ignored",
+      "omitted_article": "_news/2021-05-20-monarch-butterfly-lift-from-sea-level-to-mountain-altitudes.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2021-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0JXcCEQRw1Wz3PEpzC3NGuDxRDHQippfJoMzCccZB8jgn5HtBR6J7bJ2PihtofFKkl",
+      "action": "ignored",
+      "omitted_article": "_news/2021-05-20-higher-order-moments-of-the-matrix-fisher-distribution.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2021-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0gF8N7mnhu2ffn39hoFoRim2SdzdiRN19sGgvtNtX5h6NH7zA6orZfRKM2R4DjCFdl",
+      "action": "ignored",
+      "omitted_article": "_news/2021-05-20-quadrotor-state-estimation-with-delayed-rtk-gps.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2020-08-28",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid035dQZhUwdtMru4pzJS3cLP8nmLm5JDq9erAwFhV45GqgNY8pdKA3fiJaiJJYo9YD6l",
+      "article": "_news/2020-08-28-mahdis-bisheban-joins-the-national-research-council-of-canada.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2020-08-28",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02dtca9DUG118RhjWg2wkPZHdyWCT2LUS3cGi4WaiFPgMFRSeJtxr9ZPN8bZoAzD3Ul",
+      "article": "_news/2020-08-28-tse-huai-wu-joins-umbc-as-professor-of-practice.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2020-03-31",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02xRExwU4bA5scBaxzJUUXHr7z6tmZBrHkJYmbtpktvGjhmfBCB1ZyXGjhZswLXYeRl",
+      "article": "_news/2020-03-31-quadrotor-payload-transportation-demonstrated-in-flight.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2020-03-31",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02fCqqLgGx1DXsyZF4sGhNEFaHtCX2wFykL5wV8Pj4xyDC7GpUpx7fHJZtFfXxGiEGl",
+      "article": "_news/2020-03-31-flapping-wing-flight-inspired-by-monarch-butterflies.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2020-03-17",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid03G8cTB3FnjsfhueyMsz2xpAHPjkUT1Kyga3nkDCE2bV2RJqhjADc34cJh6gPeHjKl",
+      "article": "_news/2020-03-17-marsbee-research-featured-by-nasa-360.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2019-12-18",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02RpuSWitDwMhGqCwndj8qEdeErQq1f8ucPtgRSsnd4FPM71iW5U6PEMqa9B2nZzoel",
+      "article": "_news/2019-12-18-closing-2019-with-a-lab-dinner.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2019-08-16",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0itZtxXC4FkwChkRi1m6cV7qpS8xtrRFCpAXW8RJoY3eAaaaD7rnkxAYxKiwwoSadl",
+      "article": "_news/2019-08-16-outdoor-flight-test-facility-begins-operation.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2019-08-16",
+      "source": "https://www.facebook.com/photo/?fbid=2386042071652541&set=pcb.2386042728319142",
+      "article": "_news/2019-08-16-fdcl-hosts-summer-visitors-harsh-sharma-and-ethan-ai.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2019-06-01",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02v72FUPVaCD17BYS2STQwqMNmM2z5e19y8XZ2PkF4XUM7Vs9LBRg2e19crfH5b6pDl",
+      "article": "_news/2019-06-01-fdcl-at-learning-for-dynamics-and-control.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2019-03-02",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02m3wTWj64kcu2ouvH3nn58ezycA78zaHAjtHwmmKob1Ca4wQhwQ4HmYbGHVZg3imRl",
+      "article": "_news/2019-03-02-quadrotor-backflip-demonstrated-in-wind.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2019-03-01",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid037mFXoJp4f3qWyzted1726nGJbKWhkzuEsqtbmEB4q9aXBHC9TjFBrM6gSogKL1i9l",
+      "action": "ignored",
+      "omitted_article": "_news/2019-03-01-fdcl-publishes-its-first-paper-on-plasma-cancer-treatment.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2018-12-22",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0YBi2H7tCdqAQBeGjk3gGDUiDrcHY6LrTPquisy4Z5uKHYki7naNUy6d82EC2Z627l",
+      "article": "_news/2018-12-22-geometric-adaptive-control-presented-at-cdc-in-miami-beach.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-12-10",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0xYtRCsnyaJv4VpbqeMymgCYLcXR2G7EV9QLW5ybFL6b86k9B9yef6kRXtayVwV3Nl",
+      "article": "_news/2018-12-10-mahdis-bisheban-successfully-defends-her-dissertation.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-11-17",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0935ZWkp36eBG4A9zPGkMz2S4BiyQrcRnmXsUKBqVbLwR6eG3KyoZi1rLxaxDTPzfl",
+      "action": "ignored",
+      "omitted_article": "_news/2018-11-17-bayesian-attitude-estimation-with-the-matrix-fisher-distribution.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2018-11-17",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0RaAMsMFiChd5BaikFwTETrw9oSFjx5DSJae83kouPyS1TFL9xUhucHTC9SuqNMBvl",
+      "article": "_news/2018-11-17-open-source-fourier-transforms-on-so-3.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-10-15",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02nR7mUtumfG8SD6QUYPbSym3yHHxSqQPSvmpCdYnnyS7yw23iztawXKV7Q8xZjm3Ll",
+      "article": "_news/2018-10-15-nsf-funds-edgecloud-research-for-autonomous-vehicles.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-08-03",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02amKpgncNujY7toTkaCquhYaTLYWaaPtfcGCQQvfvvbsfocYRbP5Q9QpR3HjvwGvil",
+      "article": "_news/2018-08-03-celebrating-kuya-evan-and-shankar.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-08-03",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid03m5Att3XoiJmAuJgnnZGaTd6XoPUbhhHZYt7qEMwafk7k2niCdR9DFuG7ATeTXo8l",
+      "article": "_news/2018-08-03-shankar-kulumani-celebrates-his-doctoral-milestone.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-07-19",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02qRJmcv5Ca4YB63gVvJ9MgDEgfDjYCiiovVCPo1MzwMe5WsZaCEp7KMMNCRgB3DBgl",
+      "article": "_news/2018-07-19-daewon-lee-joins-samsung-research-america.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-07-19",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid025cXx75obtYWWTTXVRkozG5cG8nUM3LFcCh8kpzgXGfry9nLnFLKrwgCaHMZjKzJNl",
+      "article": "_news/2018-07-19-autonomous-aerial-exploration-and-mapping-at-seh.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-07-13",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02w7ziBq3sWc85JYbDaQrqNdxYrhcF8GBaKHx3TWhgurVvtYVUd6WUmJt5EFzam667l",
+      "article": "_news/2018-07-13-evan-kaufman-successfully-defends-his-dissertation.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-06-18",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02YxbK9CBQm7pFkGSWFZukKxjumLShSMXgVJ7e64qHjBuwEqLMN4cStBsg9Bf3C275l",
+      "article": "_news/2018-06-18-archive-2018-doctoral-openings-in-hybrid-systems-and-flapping-wing-uavs.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-06-12",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid024JJguczutY3HiovJ3X5gcpEEVVhqUaCRpfZVsKBqtS5MqybEUyRNE7h7xhtkYcpgl",
+      "article": "_news/2018-06-12-celebrating-the-capitals-stanley-cup-victory.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-06-12",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02m3B7qJoeFisUsnAYSeeR891vHuPmPFnLVK84idHoytybruPswdT9dYkigDys4tstl",
+      "article": "_news/2018-06-12-kanishke-gamagedara-tests-rtk-gps.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-06-06",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02ECrqqrfE3RYf3wDkdLQ5Ewj9tAwwi8sa1xTQ15sAVYkr3CHEgRpPR24SPJU1bdpDl",
+      "article": "_news/2018-06-06-fdcl-participates-in-a-niac-fellows-meeting-at-nasa.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-05-23",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0u1MTLDk2YbHEGsFFaZuTjJxZysJnS9ZTL4Vyfd6hp3SKeYJuvkkfYLnv9Ddn5R2Sl",
+      "article": "_news/2018-05-23-celebrating-chris-and-kanishke.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-05-23",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid034zXQW4F6QRtUKyYmGanUFGaZssbimhJbGETaLncf3os1UN3ZTafD2oxWJyygdJbl",
+      "article": "_news/2018-05-23-afosr-supports-stochastic-hybrid-systems-on-manifolds.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-05-23",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02RSWw3BARcxBGPYRWAbZGr1poMigoTTRsfdPLSdX7nbW7DSJVkd5NXQD32bfntdDPl",
+      "article": "_news/2018-05-23-nsf-funds-butterfly-inspired-micro-air-vehicle-research.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-05-23",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02e7ig5Y3DQc3c6dmVys3raLykVKbvgsiGyatjmFU3qxxMyH5xo2yr9gaFE1HNTb6Jl",
+      "article": "_news/2018-05-23-fdcl-joins-bike-to-work-day-2018.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-05-01",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02E7coU8S3Uh3FEWR9Fj3wZ1jAtre5iFXhUQLLDUVkVveeAvCmV6tht5UfW4qeWvJJl",
+      "article": "_news/2018-05-01-a-spring-2018-lab-bike-ride.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-04-16",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02f9nUd19G1Yjr2TbYVcEBGLqtbvaNxUPyXKgBQrHTTZykzHcytavr7TX1RZ3sYvjhl",
+      "article": "_news/2018-04-16-fdcl-joins-nsf-supported-plasma-technology-research.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-04-16",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0PSyRVyZ2qhnu3kjhYcLVW5uCkVzy5yGGu47f7Y88kdy7aoMK3oE7dWV9xJYejeBhl",
+      "article": "_news/2018-04-16-marsbee-selected-for-nasa-niac-phase-i.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-03-13",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02a8rCq6XeqJkQqi7BDY6MMBiXHe8T5UHNECN7QgHxRab347Fif9wZsChGNiMQFB9Ql",
+      "article": "_news/2018-03-13-a-spring-break-stop-at-captain-cookie.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-03-12",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02qMV6f4JBv9qE5zHds7f6mtpyHfd2wzMFnU2TATUStzkVLWpFyiRsrHXcAze4sCfkl",
+      "article": "_news/2018-03-12-a-sweet-thank-you-to-carolyn.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2018-02-27",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0jLZS4kpRD2Yx6HH9crJd6KVvyLWGfZPxEb1AyVpNd8b9Hj86hsv473TPzDs7iWTql",
+      "article": "_news/2018-02-27-fdcl-at-the-2018-seas-r-d-showcase.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2018-02-27",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02WjWL6siuGfrE44VVsmMYTCNTX3fKsMvMmThiccWi1fsFxcBov8rikKoeZKZaFCzfl",
+      "article": "_news/2018-02-27-fdcl-at-the-2018-seas-r-d-showcase.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2018-02-27",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0ig7oKR9kRMWDr9EpCZ6LWDcCbX5coiHB3K8f9pnSRnANfJZy7HzcvssDJbJTq4NNl",
+      "article": "_news/2018-02-27-multi-vehicle-mapping-and-exploration-at-seh.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-12-14",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02Cb3n1mLpaA6WGLZ3YCDDKR6QRCBXpSUjJMiLPLUDubeTVzhVFXoQ5A6ueXrPGiNzl",
+      "article": "_news/2017-12-14-autonomous-quadrotor-mapping-experiments-at-nrl.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-10-16",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid025CwmRJnHMxcurBp23QKTqEUT7NKfscYHpQxxtva8Rry4XJibrbieukyDhD9S1nHdl",
+      "article": "_news/2017-10-16-farewell-and-best-wishes-to-kalpesh-patil.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-10-05",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0ZfDiT3UqPVyGCgY7SBiDXjxqj5gy6efpbhGvyFrm2owGXJ2amWyWairatmztui4ul",
+      "article": "_news/2017-10-05-a-lab-bike-ride-to-gravelly-point.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-09-05",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0SW7UQhjUeq6vZtTA2e8aGDmcQzuydchv1XQHNVxxayL2Q2dGb4XdfQzmGbELiywwl",
+      "article": "_news/2017-09-05-mahdis-presents-at-women-in-aerospace-and-ccta.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-08-29",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02FBkxHSsoith4dj94Z2iNSVKrvX5xnVxMLJW38DMyuXWstDHwVNQrDEfAvvgmLfpQl",
+      "article": "_news/2017-08-29-shankar-attends-the-2017-aas-conference.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-08-15",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid07SUAtto9qr8dqY2GR2QwfNTioa4CPxmKZ7CumSQ17QdDZscAGqEtxe9XbxUUtGXTl",
+      "article": "_news/2017-08-15-celebrating-milestones-in-the-fdcl-community.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-05-19",
+      "source": "https://www.facebook.com/photo/?fbid=1917963385127081&set=a.478786507581478",
+      "article": "_news/2017-05-19-fdcl-joins-bike-to-work-day-2017.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-05-19",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid072zKbKXcF1RDbbvQhwrTCzLyn3RKqeE7tq84WNWucrYTqKNdFikFkPN4z87q9heql",
+      "article": "_news/2017-05-19-shankar-kulumani-receives-two-research-awards.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-04-28",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0375AtJvpmwmdnRSPNH9ksgrtXfeApR9xgkkGsHjXonxfUwohQ1Y1gVSzUpo7h9YZrl",
+      "article": "_news/2017-04-28-fdcl-rides-to-vienna.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-03-09",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0Bk87zC7x6RzKS1EWDLRB6WwYwBxjZaBCcazNKxCXFPDKnrdZDwzvkejVLGaaG4rNl",
+      "article": "_news/2017-03-09-a-march-bike-ride-for-fdcl.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-02-23",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0cA99zkNfVXhKtE8JTGsL2R36PYFpMS8PEB2hVu4Emk3JFFLeB7RRQuc7Z5jyBL4Rl",
+      "article": "_news/2017-02-23-all-three-fdcl-presentations-recognized-at-the-2017-seas-showcase.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2017-02-23",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid08bXMwLCmrt8n8VeziCx2jrYqyQcRx55jNg9EHSn49wmEkTRb2FEiHVg35N6M2e7Vl",
+      "article": "_news/2017-02-23-all-three-fdcl-presentations-recognized-at-the-2017-seas-showcase.md",
+      "action": "combined"
+    },
+    {
+      "source_date": "2017-01-25",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0wfEM91oaTZCphUp8LpxkeXwtsuegcgGTTtKRiKRVQ138CYGdVoN7XTWqBN7GoYxGl",
+      "article": "_news/2017-01-25-shankar-participates-in-the-presidential-inauguration-ceremony.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2017-01-25",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/1860612090862211",
+      "action": "ignored",
+      "omitted_article": "_news/2017-01-25-hybrid-control-on-the-two-sphere-presented-at-cdc-2016.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2017-01-25",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/1860610847529002",
+      "action": "ignored",
+      "omitted_article": "_news/2017-01-25-new-research-on-data-association-and-multiple-object-tracking.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2016-10-24",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid04JxjEpnd3yYkbgML55Y3QFSRyCspAVs2yR9xDktUVbtDC59Enzsn3nxfrtmwArjal",
+      "article": "_news/2016-10-24-an-autumn-bike-ride-in-washington-dc.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-10-07",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02RXYJeVt4KzXw9fH6DFdJ2M88YqN1UeD553HhkAgpXoc7mqTCduA826SGz19tp7h8l",
+      "article": "_news/2016-10-07-a-lab-seminar-on-git-and-github.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-08-30",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02Gnv1pKfZctxC6SCUT71tHCqF1Bnr54mRR3bRQBTJGjs1gwQ6RS5hBHPdSteM5C1tl",
+      "article": "_news/2016-08-30-the-first-fdcl-bike-ride.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-08-30",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/1785217138401707",
+      "action": "ignored",
+      "omitted_article": "_news/2016-08-30-exact-inverse-sensor-models-for-occupancy-mapping-at-acc-2016.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2016-08-30",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/1785216978401723",
+      "action": "ignored",
+      "omitted_article": "_news/2016-08-30-constrained-geometric-attitude-control-at-acc-2016.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2016-08-30",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/1785216608401760",
+      "action": "ignored",
+      "omitted_article": "_news/2016-08-30-matrix-fisher-attitude-estimation-at-acc-2016.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2016-07-08",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02Ygkt53PBzHmzwPfQRac19PyGetkhiG9q2XDaZpGVEhtzgZ7sPTscutfNnvgqh9vul",
+      "article": "_news/2016-07-08-fdcl-at-the-2016-american-control-conference.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-06-27",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02hCVjjJYH9VQG7WvtoZAHxNDV1LZ9oYfNtpeFkT6Mkx9q8Vjx14QT3EsXUEBq3dL1l",
+      "article": "_news/2016-06-27-onr-flight-tests-at-rileys-farm.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-06-24",
+      "source": "https://www.facebook.com/photo/?fbid=1748329898757098&set=a.478786507581478",
+      "article": "_news/2016-06-24-farhad-goodarzi-joins-liebherr-as-technical-lead.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-05-23",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/1730224693900952",
+      "action": "ignored",
+      "omitted_article": "_news/2016-05-23-camera-based-ground-orientation-estimation-for-uav-landing.md",
+      "reason": "Publication announcement"
+    },
+    {
+      "source_date": "2016-05-20",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02cjn3sBaBqfbMSf5L6aPZLwtUUC2JWQwriTeX5GFjv49hapXXVRdZ77BfEE4JCyP8l",
+      "article": "_news/2016-05-20-archive-2016-postdoctoral-opening-in-autonomous-exploration.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-05-19",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02zLJqFadPJtCDr21n5fhmk5vw8fjP4PfXdRptSxRR5oE4XQaJYrv9uYmUupQ9J346l",
+      "article": "_news/2016-05-19-onr-airworthiness-testing-at-the-umd-uas-test-site.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2016-05-12",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02E7j8rLBpQcvda9fwXekstFLqZ75WhgwEn6qrGLnmPQWEWiY1z3DhiU8MMTNJfRc8l",
+      "article": "_news/2016-05-12-celebrating-the-doctorates-of-tse-huai-wu-and-farhad-goodarzi.md",
+      "action": "created"
+    },
+    {
+      "source_date": "2024-06-24",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid02D33K7zyBXNy9AeYXYvgEXyQEJaYJi8hMoDuRc92rCRRUmbKECMz3xY58MGdRMrfol",
+      "article": "_news/2024-06-24-rtx-drone-competition.md",
+      "action": "updated"
+    },
+    {
+      "source_date": "2024-06-24",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0wyUA4rqwVm8YM2y8ahQaBa2WkMGtfxsJvox3EkM3YbwLnvkEH7934LiA3HVvxU8pl",
+      "article": "_news/2024-06-IFAC.md",
+      "action": "updated"
+    },
+    {
+      "source_date": "2023-03-22",
+      "source": "https://www.facebook.com/fdcl.gwu/posts/pfbid0JDG3vMdo3aChGwfMbxVfhon9GcBYSKr38LmuCXXUS5r9g7XqvE4wdMGJ8b55ywsDl",
+      "article": "_news/2023-07-MURI.md",
+      "action": "updated"
+    }
+  ]
+}

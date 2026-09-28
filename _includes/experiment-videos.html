@@ -1,0 +1,27 @@
+{% assign experiments = site.data.settings.experiment | where: 'group', include.group %}
+<div class="experiment-videos">
+  {% for experiment in experiments %}
+  <article class="experiment-video">
+    <div class="experiment-video__media">
+      {% if experiment.video %}
+      <video controls playsinline preload="none" poster="{{ experiment.poster | relative_url }}" aria-label="{{ experiment.caption | escape }}">
+        <source src="{{ experiment.video | relative_url }}" type="video/mp4">
+        <a href="{{ experiment.video | relative_url }}">Watch {{ experiment.caption }}</a>
+      </video>
+      {% else %}
+      <button class="experiment-video__play" type="button" data-youtube-id="{{ experiment.youtube_id }}" data-video-title="{{ experiment.caption | escape }}" aria-label="Play {{ experiment.caption | escape }}">
+        <img class="no-lightense" src="https://i.ytimg.com/vi/{{ experiment.youtube_id }}/mqdefault.jpg" alt="" loading="lazy" width="320" height="180">
+        <span class="experiment-video__play-icon" aria-hidden="true">▶</span>
+      </button>
+      <noscript><a href="https://www.youtube.com/watch?v={{ experiment.youtube_id }}">Watch {{ experiment.caption }} on YouTube</a></noscript>
+      {% endif %}
+    </div>
+    <h4>{{ experiment.caption }}</h4>
+    <p>{{ experiment.summary }}</p>
+    <div class="experiment-video__links">
+      {% if experiment.research %}<a href="{{ experiment.research | relative_url }}" aria-label="Related research: {{ experiment.caption | escape }}">Related research</a>{% endif %}
+      {% if experiment.youtube_id %}<a href="https://www.youtube.com/watch?v={{ experiment.youtube_id }}" aria-label="Watch on YouTube: {{ experiment.caption | escape }}">Watch on YouTube</a>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
