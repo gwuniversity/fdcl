@@ -1,6 +1,6 @@
 ---
 title: "Taeyoung Lee"
-username: "tylee"
+username: "Taeyoung"
 name: "Taeyoung Lee"
 role: "professor"
 image: "/images/Lee.png"

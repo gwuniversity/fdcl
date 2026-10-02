@@ -80,3 +80,11 @@
   h2 { font-size: 26px; margin-top: 32px; }
   .member-profile__appointments { font-size: 18px; }
 }
+
+.member-profile__news {
+  margin: 32px 0;
+  summary { cursor: pointer; font: 600 20px/1.4 $heading-font-family; }
+  ul { margin-top: 20px; }
+  li { margin-bottom: 16px; }
+  time { font: 14px/1.5 $base-font-family; color: var(--text-alt-color); }
+}

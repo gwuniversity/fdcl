@@ -34,9 +34,41 @@ layout: default
       <h2>{% if page.degree contains 'Ph.D.' %}Doctoral dissertation{% else %}Master’s thesis{% endif %}</h2>
       <p><em>{{ page.thesis_title }}</em>{% if page.degree %}<br>{{ page.degree }}{% endif %}</p>
       {% endif %}
+      {% if page.username %}
+        {% assign authored_posts = site.posts | where: 'author', page.username | sort: 'date' | reverse %}
+        {% assign authored_news = site.news | where: 'author', page.username | sort: 'date' | reverse %}
+        {% if authored_posts.size > 0 %}
+        <section aria-labelledby="authored-research">
+          <h2 id="authored-research">Research articles by {{ page.name }}</h2>
+          <div class="research-topic__cards section-recommended">
+            {% for authored_post in authored_posts %}
+              {% include research-card.html post=authored_post heading="h3" %}
+            {% endfor %}
+          </div>
+        </section>
+        {% endif %}
+        {% if authored_news.size > 0 %}
+        <details class="member-profile__news">
+          <summary>News by {{ page.name }} ({{ authored_news.size }})</summary>
+          <ul>
+            {% for news_item in authored_news %}
+            <li><a href="{{ news_item.url | relative_url }}">{{ news_item.title | escape }}</a><br><time datetime="{{ news_item.date | date_to_xmlschema }}">{{ news_item.date | date: "%B %-d, %Y" }}</time></li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+      {% endif %}
       {% if page.research_articles %}
-      <h2>Related research</h2>
-      {% include research-topic-cards.html slugs=page.research_articles %}
+        {% assign related_slugs = page.research_articles | split: ',' %}
+        {% assign member_related_posts = site.posts | where_exp: 'post', 'related_slugs contains post.slug and post.author != page.username' %}
+        {% if member_related_posts.size > 0 %}
+        <h2>Related research</h2>
+        <div class="research-topic__cards section-recommended">
+          {% for related_post in member_related_posts %}
+            {% include research-card.html post=related_post heading="h3" %}
+          {% endfor %}
+        </div>
+        {% endif %}
       {% endif %}
       {% if page.role == 'professor' %}<p><a href="{{ '/publication/' | relative_url }}">Full publication list</a> · <a href="{{ '/research/' | relative_url }}">Research areas</a></p>{% endif %}
     </div>

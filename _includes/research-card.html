@@ -22,18 +22,6 @@
                 <{{ include.heading | default: "h2" }} class="article__title">
                   <a href="{{ card_post.url | relative_url }}">{{ card_post.title }}</a>
                 </{{ include.heading | default: "h2" }}>
-                <div class="article__info">
-                  {% assign card_author = site.authors | where: 'username', card_post.author | first %}
-                  {% if card_author %}
-                  <a href="{{ card_author.url | relative_url }}" class="article__author__image">
-                    <img src="{{ card_author.image | relative_url }}" loading="lazy" alt="{{ card_author.name }}">
-                  </a>
-                  <div class="article__info__bottom">
-                    <span>Written by</span>
-                    <a class="article__author__name" href="{{ card_author.url | relative_url }}">{{ card_author.name }}</a>
-                  </div>
-                  {% endif %}
-                </div>
               </div>
 
             </div>
