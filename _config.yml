@@ -1,9 +1,5 @@
 #-------------------------------
 # General Site Settings
-# baseurl: /~tylee # the subpath of your site, e.g. /blog; choose this option before deployment
-#baseurl: # choose this option for local debudding
-#url: http://fdcl.seas.gwu.edu # the base hostname & protocol for your site, e.g. http://example.com
-#$website: http://fdcl.seas.gwu.edu
 url: https://fdcl.engineering.gwu.edu
 baseurl: 
 
@@ -19,13 +15,6 @@ plugins:
 paginate: 6
 paginate_path: "/page/:num"
 
-# Keep unused theme examples out of the public site, sitemap, and search.
-exclude:
-  - _authors
-  - _pages/elements.md
-  - _pages/featured.html
-  - _pages/videos.html
-
 
 #-------------------------------
 # Collections
@@ -39,9 +28,6 @@ collections:
   posts:
     output: true
     permalink: /:slug
-  authors:
-    output: true
-    permalink: /:name
   members:
     output: true
     permalink: /members/:name
@@ -67,11 +53,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "members"

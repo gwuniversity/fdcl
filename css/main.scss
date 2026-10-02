@@ -25,20 +25,16 @@
 :: 3-Modules
     3.1-Header
     3.2-Search
-    3.3-Pagination
     3.4-Footer
     3.5-Gallery
     3.6-Hero
     3.7-Article
-    3.8-Contact
     3.9-Sections
     3.10-Section Recommended
     3.11-Section About
-    3.12-Section Subscribe
     3.13-Buttons
 :: 4-Layouts
     4.1-Post Page
-    4.2-Authors
     4.3-Tags Page
 <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
@@ -87,8 +83,6 @@
 {% include_relative _3-modules/header.scss %}
 /* >>>>>>>>>>>>>> :: 3.2-Search <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/search.scss %}
-/* >>>>>>>>>>>>>> :: 3.3-Pagination <<<<<<<<<<<<<<< */
-{% include_relative _3-modules/pagination.scss %}
 /* >>>>>>>>>>>>>> :: 3.4-Footer <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/footer.scss %}
 /* >>>>>>>>>>>>>> :: 3.5-Gallery <<<<<<<<<<<<<<< */
@@ -100,8 +94,6 @@
 {% include_relative _3-modules/hero.scss %}
 /* >>>>>>>>>>>>>> :: 3.7-Article <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/article.scss %}
-/* >>>>>>>>>>>>>> :: 3.8-Contact <<<<<<<<<<<<<<< */
-{% include_relative _3-modules/contact.scss %}
 /* >>>>>>>>>>>>>> :: 3.9-Sections <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/sections.scss %}
 /* >>>>>>>>>>>>>> :: 3.10-Section Recommended <<<<<<<<<<<<<<< */
@@ -109,8 +101,6 @@
 {% include_relative _3-modules/section-news.scss %}
 /* >>>>>>>>>>>>>> :: 3.11-Section About <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/section-about.scss %}
-/* >>>>>>>>>>>>>> :: 3.12-Section Subscribe <<<<<<<<<<<<<<< */
-{% include_relative _3-modules/section-subscribe.scss %}
 /* >>>>>>>>>>>>>> :: 3.13-Buttons <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/buttons.scss %}
 
@@ -119,7 +109,5 @@
 ======================= */
 /* >>>>>>>>>>>>>> :: 4.1-Post <<<<<<<<<<<<<<< */
 {% include_relative _4-layouts/post.scss %}
-/* >>>>>>>>>>>>>> :: 4.2-Authors <<<<<<<<<<<<<<< */
-{% include_relative _4-layouts/authors.scss %}
 /* >>>>>>>>>>>>>> :: 4.3-Tags Page <<<<<<<<<<<<<<< */
 {% include_relative _4-layouts/tags-page.scss %}

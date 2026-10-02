@@ -48,10 +48,6 @@ hero:
   hero_affiliation: The George Washington University
   hero_description: We integrate differential geometry, control, estimation, optimization, and artificial intelligence to advance autonomous aerospace and robotic systems—from mathematical foundations to UAV flight experiments.
 
-hero_authors:
-  enable: false
-  hero_authors_description: Meet our talented team
-
 #-------------------------------
 # News Section Settings
 news:
@@ -204,23 +200,6 @@ social:
 
 # Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
 # Other icons can be found at https://fontawesome.com/icons
-
-
-#-------------------------------
-# Contact Settings
-contact:
-  form_id: tylee@gwu.edu # Add your form_id
-  title: Contact Us
-  description: If you have any questions, please feel free to contact us.
-  button_text: Send now
-
-# NOTE
-# Nomod theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
-
-
-#-------------------------------
-# Comment Section (Disqus)
-disqus_identifier: false # Comments are disabled on lab articles.
 
 
 #-------------------------------
