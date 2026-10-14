@@ -4,7 +4,7 @@ title: 'Robot Maps That Remember Motion and Revise Their Understanding'
 description: PIMS-SLAM and REVISE connect persistent object tracking, revisable 3D mapping, and language-based scene understanding.
 date: 2026-09-21 00:00:00 -0400
 date_basis: "Latest supporting video revision: ICRA27.2/revise_supp_video_ver5.mp4, local modification date."
-author: Taeyoung
+author: ben
 image: '/images/posts/revisable-maps/chairs-separated.png'
 image_fit: contain
 image_max_width: 560
@@ -51,9 +51,9 @@ These are mean **PSNR** scores for current-view renderings after tracking and ma
 
 ## REVISE: a map that can change its mind
 
-Object recognition has a different failure mode: two nearby chairs may initially look like one object, or different views of the same object may become separate map entries. An early decision can persist even after the robot obtains a better view.
+Most online instance-semantic mapping systems assign incoming 2D segmentations to 3D objects as frames arrive. This greedy strategy makes early mistakes permanent: two adjacent chairs may be merged before viewpoints disambiguate them, or drifted poses may fracture a single object into disconnected fragments. Once committed, updates are typically restricted to merging.
 
-REVISE retains the evidence behind those decisions: selected camera frames, depth, object masks, visual descriptors, and relationships across views. It periodically rebuilds object groups from this evidence, allowing **merging, splitting, and reassignment**.
+REVISE decouples observation storage from instance grouping. Instead of freezing early associations, it maintains an **incremental evidence store** that retains keyframe camera poses, depth observations, class-agnostic 2D masks, and vision–language embeddings. A 3D voxel grid tracks cross-view mask containment and visibility. Periodically, REVISE runs **iterative consensus clustering** over the accumulated evidence, enabling objects to **split, merge, and reassign masks** as new viewpoints arrive.
 
 <figure>
   <div class="post__video">
@@ -79,11 +79,11 @@ REVISE retains the evidence behind those decisions: selected camera frames, dept
   <figcaption class="post__image__caption">The same chair pair at 54 and 66 seconds in the manuscript’s example. Additional observations allow REVISE to split an incorrect grouping. Colors indicate object identities.</figcaption>
 </figure>
 
-Revision also matters after **loop closure**, when a robot recognizes a previously visited place and corrects its estimated camera trajectory. REVISE rebuilds geometry and cross-view evidence using those corrected poses, then reconsiders the object assignments. In a paired study on 18 ScanNet scenes with identical observations and pose corrections, enabling repair increased instance segmentation overlap from **25.8 to 27.4 mIoU** and semantic segmentation overlap from **13.2 to 14.5 mIoU**. Higher overlap means closer agreement with the reference labels.
+The ability to revise becomes especially valuable after **loop closure**. When SLAM corrects accumulated trajectory drift, conventional online maps retain corrupted associations formed under drifted geometry. In REVISE, loop-closure repair updates stored poses and re-derives the voxel grid, point-in-mask matrix, and consensus graph **without re-running expensive 2D image segmentation or feature extraction**. In evaluations on 18 ScanNet scenes, enabling repair increased instance segmentation overlap from **25.8 to 27.4 mIoU** and semantic segmentation overlap from **13.2 to 14.5 mIoU**. Across both ScanNet-18 and Replica-8 benchmarks, REVISE consistently outperforms online baselines such as OVO and OVI-MAP, especially in high-precision instance metrics ($AP_{50}$ and $AP_{25}$).
 
 ## From object names to language-based queries
 
-REVISE’s open-vocabulary representation connects object geometry to language. A user can search by a name, an appearance, or a function—for example, **“where to heat up food”** rather than a fixed category label.
+REVISE aggregates member-mask embeddings into an outlier-filtered instance descriptor, connecting 3D object geometry directly to open-vocabulary natural language. Rather than relying on fixed category labels, a user can locate objects using names, appearance attributes, or functional descriptions—such as **“where to heat up food”** (retrieving a microwave oven) or **“where to keep drinks cold”** (retrieving a refrigerator).
 
 <figure>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; align-items: center;">
@@ -93,7 +93,7 @@ REVISE’s open-vocabulary representation connects object geometry to language. 
   <figcaption class="post__image__caption">Real-world office demonstration using an RGB-D camera and ORB-SLAM3 poses. The query “where to heat up food” retrieves an object in both the camera view and the 3D map. Red marks the best match; pale orange marks the runner-up. This demonstrates map retrieval, rather than execution of a robot task.</figcaption>
 </figure>
 
-The retained evidence also supports cooperative mapping. In simulated two- and four-robot splits of recorded trajectories, REVISE reproduced its single-robot scores when pooling the same observations in a shared coordinate frame and grid. This establishes consistency under evidence pooling; independently navigating robots with uncertain relative poses remain a further challenge.
+Decoupling observations from object grouping also enables seamless **cooperative mapping**. When multiple robots share a coordinate frame and voxel grid, their evidence stores can simply be pooled. Consensus clustering directly derives a globally consistent instance map across the combined observations without needing heuristic cross-robot object matching. In simulated multi-robot splits on benchmark trajectories, REVISE reproduced its single-robot accuracy across pooled records.
 
 ## Supporting human–AI collaboration in CHASE
 
