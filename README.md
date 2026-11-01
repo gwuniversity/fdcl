@@ -75,3 +75,5 @@ Explain the problem, the main idea, what the results demonstrate, and why they m
 | `_pages/research.md` | Research introductions and the article lists for each theme |
 
 The Publications page is generated: **do not edit `_pages/publication.md` directly**. Its source bibliography (`../tylee.bib`) and generator (`../Vitae/bib2pub.py`) are outside this repository. Ask the maintainer to update the bibliography and regenerate the page. Extra paper/code/video/article links are stored in `_data/publication_resources.json` under exact BibTeX keys and also require regeneration.
+
+To omit an entry from the website while retaining it in the bibliography and CV, set `"hidden": true` under its citation key in `_data/publication_resources.json` and regenerate the page.

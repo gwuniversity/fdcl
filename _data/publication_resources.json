@@ -1,4 +1,7 @@
 {
+  "ChiLeeFR26": {
+    "hidden": true
+  },
   "IwaBloLeePNIPS26": {
     "preprint": "https://arxiv.org/abs/2605.16644",
     "overview": "/score-kalman-filter-research"
